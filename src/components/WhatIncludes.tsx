@@ -37,15 +37,19 @@ const WhatIncludes = () => {
             <p className="text-xl text-gray-600 mb-8"> 
               Um livro completo para o desenvolvimento espiritual e criativo do seu filho
             </p>         
-            
-            <div className="mb-9">
-            <img 
-                      src="https://i.imgur.com/GD6dHoU.png" 
-                      alt="Mochup Livro Colorindo com Jesus + Conteúdo"
-                      className="mx-auto max-w-xs md:max-w-md lg:max-w-lg"
-                      style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
-                    />
-          </div>
+          
+          {/* Espaço para imagem 1 */}
+          
+          <div
+                className="mx-auto max-w-xs md:max-w-md lg:max-w-lg"
+                style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
+              >
+                <img
+                  src="https://i.imgur.com/GD6dHoU.png"
+                  className="w-full transition-transform duration-500 hover:scale-110 hover:rotate-2"
+                  alt="Mochup Livro Colorindo com Jesus + Conteúdo"
+                />
+            </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
             {includes.map((item, index) => (
@@ -111,16 +115,18 @@ const WhatIncludes = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               4 produtos exclusivos para transformar completamente os momentos especiais da sua família
             </p>
-
-          <div className="mb-8">
-              <img 
-                      src="https://i.imgur.com/sNSpDyB.png" 
-                      alt="Mochup Livro Colorindo com Jesus + Conteúdo"
-                      className="mx-auto max-w-xs md:max-w-md lg:max-w-lg"
-                      style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
-                    />
-            </div>
-            
+             
+            {/* Espaço para imagem 2 */}
+            <div
+                className="mx-auto max-w-xs md:max-w-md lg:max-w-lg"
+                style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
+              >
+                <img
+                  src="https://i.imgur.com/sNSpDyB.png"
+                  className="w-full transition-transform duration-500 hover:scale-110 hover:rotate-2"
+                  alt="Mochup Kit + Bônus"
+                />
+              </div>
           </div>
 
           <div className="max-w-6xl mx-auto mb-12">
