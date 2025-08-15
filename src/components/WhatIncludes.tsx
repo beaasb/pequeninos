@@ -227,7 +227,7 @@ const WhatIncludes = () => {
             >
               Quero o Kit Completo por R$ 19,90
             </a>
-            <p className="text-sm text-gray-500 mt-4">⚡ Oferta limitada - Economia de R$ 13,70</p>
+            <p className="text-sm text-gray-500 mt-4">⚡ Oferta limitada - Economia de R$ 46,00</p>
           </div>
         </div>
       </section>
