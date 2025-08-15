@@ -11,7 +11,7 @@ const options = [
     id: "livros",
     title: "Livro",
     subtitle: "Versículos bíblicos",
-    oldPrice: "R$ 27,00",
+    oldPrice: "R$ 27,90",
     price: "R$ 9,90",
     borderColor: "border-blue-500",
     bgColor: "bg-blue-50",
@@ -26,7 +26,7 @@ const options = [
     id: "kit",
     title: "Kit Completo",
     subtitle: "Livro + 3 Bônus",
-    oldPrice: "R$ 33,60",
+    oldPrice: "R$ 65,90",
     price: "R$ 19,90",
     borderColor: "border-green-500",
     bgColor: "bg-green-50",
@@ -95,7 +95,7 @@ const SpecialOfferModal: React.FC<SpecialOfferModalProps> = ({ isOpen, onClose }
         window.fbq('track', 'InitiateCheckout', {
           content_name: 'Kit Completo - Colorindo com Jesus',
           content_ids: ['SKU_KIT_001'],
-          value: 29.90,
+          value: 19.90,
           currency: 'BRL',
           event_id: eventId
         });
