@@ -44,7 +44,7 @@ const CompleteKit = () => {
       window.fbq('track', 'InitiateCheckout', {
         content_name: 'Kit Completo - Colorindo com Jesus',
         content_ids: ['SKU_KIT_001'],
-        value: 29.90,
+        value: 19.90,
         currency: 'BRL',
         event_id: eventId
       });
@@ -98,13 +98,13 @@ const CompleteKit = () => {
               <div className="text-center mb-6">
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-2xl text-gray-500 md:text-3xl font-bold text-muted-foreground line-through">
-                    R$ 27,00
+                    R$ 27,90
                   </span>
                   <span className="text-3xl text-amber-600 md:text-4xl font-bold text-primary">
                     R$ 9,90
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground text-gray-500">Economia de R$ 17,10</p>
+                <p className="text-sm text-muted-foreground text-gray-500">Economia de R$ 18,00</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
@@ -169,14 +169,14 @@ const CompleteKit = () => {
 
               <div className="flex items-center justify-center gap-3 mb-2">
                 <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">
-                  R$ 33,60
+                  R$ 65,90
                 </span>
                 <span className="text-3xl md:text-4xl font-bold text-white">
                   R$ 19,90
                 </span>
               </div>
               <p className="text-sm text-green-100 mb-6">
-                Economia de R$ 13,70 - Kit Completo
+                Economia de R$ 46,00 - Kit Completo
               </p>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
