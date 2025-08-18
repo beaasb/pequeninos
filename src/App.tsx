@@ -10,7 +10,6 @@ import Guarantee from './components/Guarantee';
 import SocialProofBar from './components/SocialProofBar';
 import SpecialOfferModal from './components/SpecialOfferModal';
 import Footer from './components/Footer';
-import PixelTest from './components/PixelTest';
 
 // Declaração global do fbq para TypeScript
 declare global {
@@ -63,9 +62,6 @@ function App() {
         isOpen={showModal} 
         onClose={() => setShowModal(false)} 
       />
-      
-      {/* Componente de teste do Pixel (só em desenvolvimento) */}
-      <PixelTest />
     </div>
   );
 }
