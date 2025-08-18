@@ -9,7 +9,8 @@ import FAQ from './components/FAQ';
 import Guarantee from './components/Guarantee';
 import SocialProofBar from './components/SocialProofBar';
 import SpecialOfferModal from './components/SpecialOfferModal';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
+import PixelTest from './components/PixelTest';
 
 // Declaração global do fbq para TypeScript
 declare global {
@@ -29,8 +30,7 @@ function App() {
         content_ids: ['SKU_LIVRO_001'],
         content_type: 'product',
         value: 9.90,
-        currency: 'BRL',
-        event_id: eventId
+        currency: 'BRL'
       });
     }
   }, []);
@@ -63,6 +63,9 @@ function App() {
         isOpen={showModal} 
         onClose={() => setShowModal(false)} 
       />
+      
+      {/* Componente de teste do Pixel (só em desenvolvimento) */}
+      <PixelTest />
     </div>
   );
 }

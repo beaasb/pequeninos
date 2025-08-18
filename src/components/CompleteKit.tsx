@@ -33,8 +33,15 @@ const CompleteKit = () => {
         currency: 'BRL',
         event_id: eventId
       });
-      // Armazena o eventId no localStorage para deduplicação CAPI
       localStorage.setItem('lastInitiateCheckoutEventId', eventId);
+      
+      // Também dispara AddToCart para melhor rastreamento
+      window.fbq('track', 'AddToCart', {
+        content_name: 'Colorindo com Jesus - Livro',
+        content_ids: ['SKU_COLORINDO_001'],
+        value: 9.90,
+        currency: 'BRL'
+      });
     }
   };
 
@@ -48,8 +55,15 @@ const CompleteKit = () => {
         currency: 'BRL',
         event_id: eventId
       });
-      // Armazena o eventId no localStorage para deduplicação CAPI
       localStorage.setItem('lastInitiateCheckoutEventId', eventId);
+      
+      // Também dispara AddToCart para melhor rastreamento
+      window.fbq('track', 'AddToCart', {
+        content_name: 'Kit Completo - Colorindo com Jesus',
+        content_ids: ['SKU_KIT_001'],
+        value: 29.90,
+        currency: 'BRL'
+      });
     }
   };
   return (
