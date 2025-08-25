@@ -70,20 +70,21 @@ const WhatIncludes = () => {
               </div>
               
               {/* Botões de navegação com destaque em valor */}
-              <div className="flex flex-wrap gap-4 justify-center mb-6">
-                <a 
-                  href="#oferta-principal"
-                  className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-                >
-                  Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
-                </a>
-                <a 
-                  href="#oferta-kit"
-                  className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-                >
-                  Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
-                </a>
-              </div>
+              <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
+                  <a 
+                    href="#oferta-principal"
+                    className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                  >
+                    Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
+                  </a>
+                  <a 
+                    href="#oferta-kit"
+                    className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                  >
+                    Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
+                  </a>
+                </div>
+
 
 
           {/* Legenda reforçando a oferta do kit */}
