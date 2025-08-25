@@ -57,7 +57,7 @@ const WhatIncludes = () => {
           </div>
 
           {/* Grid de conteúdos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
             {includes.map((item, index) => (
               <div key={index} className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div className="mb-5 rounded-xl overflow-hidden shadow-md w-full h-full">
