@@ -1,6 +1,8 @@
 import React from "react";
 import { BookOpen, Gift, Calendar, Star } from "lucide-react";
 
+
+
 const WhatIncludes = () => {
   const includes = [
     {
@@ -61,29 +63,28 @@ const WhatIncludes = () => {
           </div>
 
           {/* Carrossel com scroll horizontal */}
-          <div className="overflow-x-auto">
-            <div className="flex gap-6 snap-x snap-mandatory px-4">
+          <div className="overflow-x-auto scrollbar-hide">
+            <div className="flex gap-8 snap-x snap-mandatory px-4">
               {includes.map((item, index) => (
                 <div
                   key={index}
-                  className="min-w-[260px] md:min-w-[300px] lg:min-w-[360px] bg-white p-6 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center snap-center"
+                  className="flex-shrink-0 w-72 md:w-80 snap-center text-center"
                 >
-                  {/* imagem sem sombra */}
-                  <img
-                    src={item.image}
-                    alt={item.alt || item.title}
-                    className="w-64 md:w-80 object-cover rounded-xl mb-4"
-                  />
-                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm text-center">
+                  <div className="relative">
+                    <img
+                      src={item.image}
+                      alt={item.alt || item.title}
+                      className="w-full h-56 object-contain rounded-xl"
+                    />
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/90 px-3 py-1 rounded-lg text-sm font-semibold text-gray-800 shadow">
+                      {item.title}
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm mt-3">
                     {item.description}
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
 
           {/* Botões de navegação */}
           <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
@@ -91,15 +92,13 @@ const WhatIncludes = () => {
               href="#oferta-principal"
               className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero Somente o Livro{" "}
-              <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
+              Quero Somente o Livro R$ 9,90
             </a>
             <a
               href="#oferta-kit"
               className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero o Kit Completo{" "}
-              <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
+              Quero o Kit Completo R$ 19,90
             </a>
           </div>
 
