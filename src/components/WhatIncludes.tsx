@@ -127,9 +127,6 @@ const WhatIncludes = () => {
           Kit completo inclui o livro + 3 bônus exclusivos por R$ 19,90
         </p>
       </div>
-    </section>
-     );
-};
 
       {/* Seção Kit Completo */}
       <section
