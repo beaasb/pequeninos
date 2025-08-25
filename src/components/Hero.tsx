@@ -14,13 +14,13 @@ const Hero = () => {
               <span className="text-purple-600 font-bold text-lg">Pequeninos™</span>
             </div>
 
-            {/* 🚨 Alterado: Headline com gancho do anúncio */}
+            {/* 🚨 Headline com gancho do anúncio */}
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
               Quantas vezes você já tentou ensinar a Bíblia <br /> 
               para as crianças e percebeu que elas se distraem?
             </h1>
 
-            {/* 🚨 Alterado: Subhead com clareza do formato */}
+            {/* 🚨 Subhead com clareza do formato */}
             <p className="text-xl text-gray-600 mb-6 leading-relaxed">
               Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:
               <strong> um Livro de Colorir Cristão em PDF</strong>, com entrega imediata para você imprimir quantas vezes quiser.
@@ -30,7 +30,7 @@ const Hero = () => {
               Atividades rápidas, criativas e cheias de significado que unem pais e filhos em momentos de fé — mesmo com a rotina corrida.
             </p>
 
-            {/* 🚨 Alterado: CTAs mais claros */}
+            {/* 🚨 CTAs + botão "O que vou receber?" mantido */}
             <div className="flex flex-col items-center gap-4 md:gap-6">
               <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center">
                 <a 
@@ -47,8 +47,18 @@ const Hero = () => {
                 </a>
               </div>
 
-              {/* 🚨 Alterado: microconfiança logo abaixo */}
-              <p className="text-sm text-gray-500 font-medium mt-2">
+              {/* 🔹 Mantido e ajustado: botão secundário */}
+              <div className="w-full flex justify-center">
+                <a 
+                  href="#conteudo-incluso"
+                  className="border-2 border-yellow-500 text-yellow-500 px-6 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full md:w-auto" 
+                >
+                  📦 O que vou receber?
+                </a>
+              </div>
+
+              {/* 🚨 Microconfiança logo abaixo */}
+              <p className="text-sm text-gray-500 font-medium mt-2 text-center">
                 ✅ Entrega imediata em PDF · ✅ Pagamento seguro via Pix e Cartão
               </p>
             </div>
