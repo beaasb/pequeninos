@@ -62,9 +62,7 @@ const WhatIncludes = () => {
                   <div key={index} className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                       <div className="mb-5 rounded-xl overflow-hidden shadow-md w-full flex flex-col">
                         <img src={item.image} alt={item.alt || item.title} className="object-cover w-full flex-shrink-0" />
-                      </div>
-
-
+                      
                     </div>
                     <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
                     <p className="text-gray-600 text-sm text-center mb-6">{item.description}</p>
