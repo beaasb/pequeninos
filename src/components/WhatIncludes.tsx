@@ -134,7 +134,7 @@ const WhatIncludes = () => {
             >
               {includes.map((item, index) => (
                 <SwiperSlide key={index} className="flex flex-col items-center">
-                  <h3 className="text-lg font-bold text-gray-800 mt-2">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-800 mt-5">{item.title}</h3>
                   <img
                     src={item.image}
                     alt={item.alt}
