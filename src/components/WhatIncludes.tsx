@@ -115,44 +115,51 @@ const WhatIncludes = () => {
           </div>
 
           {/* Carrossel */}
-          <div className="relative max-w-4xl mx-auto">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={30}
-              slidesPerView={1}
-              breakpoints={{
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              loop={true}
-              navigation={{
-                prevEl: ".custom-prev",
-                nextEl: ".custom-next",
-              }}
-              pagination={{ clickable: true }}
-              className="rounded-xl"
-            >
-              {includes.map((item, index) => (
-                <SwiperSlide key={index} className="flex flex-col items-center">
-                  <h3 className="text-lg font-bold text-gray-800 mt-2">{item.title}</h3>
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-64 md:w-72 rounded-xl shadow-md-5"
-                  />
-                  
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div className="relative max-w-4xl mx-auto">
+              <Swiper
+                modules={[Navigation, Pagination]}
+                spaceBetween={40} // aumenta o espaço entre os slides
+                slidesPerView={1}
+                breakpoints={{
+                  640: { slidesPerView: 2, spaceBetween: 40 },
+                  1024: { slidesPerView: 3, spaceBetween: 50 },
+                }}
+                loop={true}
+                navigation={{
+                  prevEl: ".custom-prev",
+                  nextEl: ".custom-next",
+                }}
+                pagination={{ clickable: true }}
+                className="rounded-xl"
+              >
+                {includes.map((item, index) => (
+                  <SwiperSlide key={index} className="flex flex-col items-center">
+                    <img
+                      src={item.image}
+                      alt={item.alt}
+                      className="w-72 md:w-80 lg:w-96 rounded-xl shadow-md"
+                    />
+                    <h3 className="text-lg font-bold text-gray-800 mt-4">{item.title}</h3>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            
+              {/* Botões do Swiper */}
+              <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+                <ChevronLeft className="w-6 h-6 text-gray-700" />
+              </button>
+              <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+                <ChevronRight className="w-6 h-6 text-gray-700" />
+              </button>
+            </div>
+            
+            {/* Estilo adicional para espaçamento das bolinhas */}
+            <style jsx>{`
+              .swiper-pagination {
+                margin-top: 1.5rem !important; /* aumenta distância entre imagem e bolinhas */
+              }
+            `}</style>
 
-            {/* Botões do Swiper */}
-            <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
-              <ChevronLeft className="w-6 h-6 text-gray-700" />
-            </button>
-            <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
-              <ChevronRight className="w-6 h-6 text-gray-700" />
-            </button>
-          </div>
 
           {/* Botões de compra */}
           <div className="flex flex-wrap gap-4 justify-center pt-12 mb-6">
