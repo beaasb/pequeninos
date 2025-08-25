@@ -36,101 +36,97 @@ const WhatIncludes = () => {
     },
   ];
 
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const [isPaused, setIsPaused] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const scrollAmount = 300;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === includes.length - 1 ? 0 : prev + 1));
   };
 
-  // autoplay
-  useEffect(() => {
-    if (!isPaused) {
-      intervalRef.current = setInterval(() => {
-        scroll("right");
-      }, 4000);
-    }
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [isPaused]);
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? includes.length - 1 : prev - 1));
+  };
 
   return (
-    <>
-      <section
-        id="conteudo-incluso"
-        className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50"
-      >
-        <div className="max-w-6xl mx-auto relative">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
-              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF –
-              Imprima quantas vezes quiser
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Veja o que você vai receber
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Um livro completo para o desenvolvimento espiritual e criativo do
-              seu filho
-            </p>
+    <section
+      id="conteudo-incluso"
+      className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50"
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* Cabeçalho */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
+            <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF –
+            Imprima quantas vezes quiser
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Veja o que você vai receber
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Um livro completo para o desenvolvimento espiritual e criativo do
+            seu filho
+          </p>
 
-            {/* Mockup do Livro */}
-            <div className="mx-auto mb-8">
+          {/* Mockup Livro */}
+          <div className="mx-auto mb-8">
+            <img
+              src="https://i.imgur.com/GD6dHoU.png"
+              className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
+              alt="Mockup Livro Colorindo com Jesus + Conteúdo"
+            />
+          </div>
+        </div>
+
+        {/* Carrossel */}
+        <div className="relative max-w-xl mx-auto">
+          {/* Conteúdo do slide */}
+          <div className="text-center">
+            <h3 className="text-lg font-bold text-gray-800 mb-3">
+              {includes[currentIndex].title}
+            </h3>
+            <div className="relative">
+              {/* Botão esquerda */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-700" />
+              </button>
+
+              {/* Imagem */}
               <img
-                src="https://i.imgur.com/GD6dHoU.png"
-                className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
-                alt="Mockup Livro Colorindo com Jesus + Conteúdo"
+                src={includes[currentIndex].image}
+                alt={includes[currentIndex].alt}
+                className="w-64 md:w-80 mx-auto rounded-xl"
               />
+
+              {/* Botão direita */}
+              <button
+                onClick={nextSlide}
+                className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-700" />
+              </button>
             </div>
+
+            {/* Descrição */}
+            <p className="text-gray-600 text-sm mt-4">
+              {includes[currentIndex].description}
+            </p>
           </div>
 
-          {/* Botões de navegação - só no desktop */}
-          <button
-            onClick={() => scroll("left")}
-            className="hidden md:flex absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 transition"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="hidden md:flex absolute top-1/2 -right-6 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 transition"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
-          </button>
-
-          {/* Carrossel */}
-          <div
-            ref={scrollRef}
-            className="overflow-x-auto scrollbar-hide"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            <div className="flex gap-8 snap-x snap-mandatory px-4">
-              {includes.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-72 md:w-80 snap-center text-center"
-                >
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <img
-                    src={item.image}
-                    alt={item.alt || item.title}
-                    className="w-full h-56 object-contain rounded-xl"
-                  />
-                  <p className="text-gray-600 text-sm mt-3">
-                    {item.description}
-                  </p>
-                </div>
+          {/* Bolinhas de navegação */}
+          <div className="flex justify-center mt-6 gap-2">
+            {includes.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  currentIndex === index
+                    ? "bg-blue-600 w-4"
+                    : "bg-gray-300 hover:bg-gray-400"
+                }`}
+              />
+            ))}
               ))}
             </div>
           </div>
