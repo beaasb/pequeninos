@@ -85,7 +85,7 @@ const CompleteKit = () => {
         {/* Ofertas */}
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Livro */}
-          <div className="bg-white rounded-2xl p-6 md:p-8 text-card-foreground shadow-xl relative overflow-hidden">
+          <div id="oferta-principal" className="bg-white rounded-2xl p-6 md:p-8 text-card-foreground shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-24 h-24 bg-orange-100 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="absolute bottom-0 left-0 w-20 h-20 bg-indigo-100 rounded-full translate-y-10 -translate-x-10"></div>
 
@@ -143,7 +143,7 @@ const CompleteKit = () => {
           </div>
 
           {/* Kit Completo */}
-          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
+          <div id="oferta-kit" className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-10 -translate-x-10"></div>
 
