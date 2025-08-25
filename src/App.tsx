@@ -35,7 +35,6 @@ function App() {
   return (
     <div className="min-h-screen"> 
       <Header />
-      <SocialProofBar />
       <Hero />
       <WhereToUse />
       <WhatIncludes />      
