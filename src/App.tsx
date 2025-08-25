@@ -7,8 +7,6 @@ import CompleteKit from './components/CompleteKit';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Guarantee from './components/Guarantee';
-import SocialProofBar from './components/SocialProofBar';
-import SpecialOfferModal from './components/SpecialOfferModal';
 import Footer from './components/Footer';
 
 // Declaração global do fbq para TypeScript
@@ -33,14 +31,6 @@ function App() {
       });
     }
   }, []);
-  // Mostra o modal após 8 segundos
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowModal(true);
-    }, 8000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="min-h-screen"> 
@@ -57,11 +47,6 @@ function App() {
       {/* Novo componente Footer */}
       <Footer />
 
-      {/* Modal de oferta especial */}
-      <SpecialOfferModal 
-        isOpen={showModal} 
-        onClose={() => setShowModal(false)} 
-      />
     </div>
   );
 }
