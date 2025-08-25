@@ -12,7 +12,7 @@ const Header = () => {
 
         {/* 🚨 Alterado: urgência mais discreta e realista */}
         <span className="text-sm sm:text-base font-medium">
-          ⚡ Oferta de lançamento disponível hoje
+          ⚡ Oferta de lançamento disponível hoje ⚡
         </span>
       </div>
     </div>
