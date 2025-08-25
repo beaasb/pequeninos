@@ -16,9 +16,10 @@ import "swiper/css/pagination";
 const WhatIncludes = () => {
   const includes = [
     {
+      title: "6 Sessões Temáticas"
       image: "https://i.imgur.com/Ny8TuXk.png",
       alt: "Sessões Temáticas",
-      title: "6 Sessões Temáticas",
+      ,
     },
     {
       image: "https://i.imgur.com/qKSGCUd.png",
