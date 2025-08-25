@@ -1,8 +1,5 @@
-import React from 'react';
-import Slider from "react-slick";
-import { BookOpen, Gift, Calendar, Star } from 'lucide-react';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import { BookOpen, Gift, Calendar, Star } from "lucide-react";
 
 const WhatIncludes = () => {
   const includes = [
@@ -10,69 +7,50 @@ const WhatIncludes = () => {
       image: "https://i.imgur.com/Ny8TuXk.png",
       alt: "Sessões Temáticas",
       title: "6 Sessões Temáticas",
-      description: "Com versículos e desenhos"
+      description: "Com versículos e desenhos",
     },
     {
       image: "https://i.imgur.com/qKSGCUd.png",
       alt: "Atividades Criativas",
       title: "6 Atividades Criativas",
-      description: "Jogos e brincadeiras bíblicas"
+      description: "Jogos e brincadeiras bíblicas",
     },
     {
       image: "https://i.imgur.com/033kwqr.png",
       alt: "Checklist de Progresso",
       title: "Checklist de Progresso",
-      description: "Acompanhe o desenvolvimento"
+      description: "Acompanhe o desenvolvimento",
     },
     {
       image: "https://i.imgur.com/imPCbhF.png",
       alt: "Certificado de Conclusão",
       title: "Certificado de Conclusão",
-      description: "Para motivar a criança (brinde)"
+      description: "Para motivar a criança (brinde)",
     },
   ];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "60px",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: "40px",
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerPadding: "20px",
-        }
-      }
-    ]
-  };
 
   return (
     <>
       {/* Seção do Livro */}
-      <section id="conteudo-incluso" className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section
+        id="conteudo-incluso"
+        className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
-              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
+              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF –
+              Imprima quantas vezes quiser
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Veja o que você vai receber
             </h2>
-            <p className="text-xl text-gray-600 mb-8"> 
-              Um livro completo para o desenvolvimento espiritual e criativo do seu filho
-            </p>                    
+            <p className="text-xl text-gray-600 mb-8">
+              Um livro completo para o desenvolvimento espiritual e criativo do
+              seu filho
+            </p>
 
-            {/* Mockup do Livro em tamanho real, sem sombra */}
+            {/* Mockup do Livro em tamanho real */}
             <div className="mx-auto mb-8">
               <img
                 src="https://i.imgur.com/GD6dHoU.png"
@@ -82,32 +60,46 @@ const WhatIncludes = () => {
             </div>
           </div>
 
-          {/* Carrossel */}
-          <Slider {...settings}>
-            {includes.map((item, index) => (
-              <div key={index} className="px-4">
-                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                  <img src={item.image} alt={item.alt || item.title} className="w-64 md:w-80 lg:w-96 object-cover rounded-xl mb-4" />
-                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
-                  <p className="text-gray-600 text-sm text-center">{item.description}</p>
+          {/* Carrossel com scroll horizontal */}
+          <div className="overflow-x-auto">
+            <div className="flex gap-6 snap-x snap-mandatory px-4">
+              {includes.map((item, index) => (
+                <div
+                  key={index}
+                  className="min-w-[260px] md:min-w-[300px] lg:min-w-[360px] bg-white p-6 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center snap-center"
+                >
+                  {/* imagem sem sombra */}
+                  <img
+                    src={item.image}
+                    alt={item.alt || item.title}
+                    className="w-64 md:w-80 object-cover rounded-xl mb-4"
+                  />
+                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm text-center">
+                    {item.description}
+                  </p>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </div>
+          </div>
 
           {/* Botões de navegação */}
           <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
-            <a 
+            <a
               href="#oferta-principal"
               className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
+              Quero Somente o Livro{" "}
+              <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
             </a>
-            <a 
+            <a
               href="#oferta-kit"
               className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
+              Quero o Kit Completo{" "}
+              <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
             </a>
           </div>
 
@@ -118,7 +110,10 @@ const WhatIncludes = () => {
       </section>
 
       {/* Nova seção Kit Completo */}
-      <section id="kit-completo" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section
+        id="kit-completo"
+        className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50"
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4 mx-auto">
@@ -128,10 +123,11 @@ const WhatIncludes = () => {
               Veja o Que Inclui o Kit Completo
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              4 produtos exclusivos para transformar completamente os momentos especiais da sua família
+              4 produtos exclusivos para transformar completamente os momentos
+              especiais da sua família
             </p>
 
-            {/* Mockup do Kit em tamanho real, sem sombra */}
+            {/* Mockup do Kit em tamanho real */}
             <div className="mx-auto mb-8">
               <img
                 src="https://i.imgur.com/sNSpDyB.png"
@@ -144,24 +140,63 @@ const WhatIncludes = () => {
           {/* Grid de produtos do kit */}
           <div className="max-w-6xl mx-auto mb-12 grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: "Colorindo com Jesus", label: "Produto Principal", icon: BookOpen, img: "https://i.imgur.com/R8rgJs9.png", color: "blue" },
-              { title: "Planner Devocional Infantil", label: "Bônus 1", icon: Calendar, img: "https://i.imgur.com/AGIOmiE.png", color: "green" },
-              { title: "Desafios Bíblicos", label: "Bônus 2", icon: Gift, img: "https://i.imgur.com/JyYOhmO.png", color: "purple" },
-              { title: "Devocional para Pais", label: "Bônus 3", icon: Star, img: "https://i.imgur.com/Cso15H3.png", color: "yellow" },
+              {
+                title: "Colorindo com Jesus",
+                label: "Produto Principal",
+                icon: BookOpen,
+                img: "https://i.imgur.com/R8rgJs9.png",
+                color: "blue",
+              },
+              {
+                title: "Planner Devocional Infantil",
+                label: "Bônus 1",
+                icon: Calendar,
+                img: "https://i.imgur.com/AGIOmiE.png",
+                color: "green",
+              },
+              {
+                title: "Desafios Bíblicos",
+                label: "Bônus 2",
+                icon: Gift,
+                img: "https://i.imgur.com/JyYOhmO.png",
+                color: "purple",
+              },
+              {
+                title: "Devocional para Pais",
+                label: "Bônus 3",
+                icon: Star,
+                img: "https://i.imgur.com/Cso15H3.png",
+                color: "yellow",
+              },
             ].map((item, index) => {
               const Icon = item.icon;
               return (
-                <div key={index} className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-200">
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-200"
+                >
                   <div className="text-center mb-3">
-                    <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-${item.color}-100 text-${item.color}-800`}>
+                    <div
+                      className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-${item.color}-100 text-${item.color}-800`}
+                    >
                       <Icon className="w-3 h-3 mr-1" /> {item.label}
                     </div>
                   </div>
                   <div className="w-full aspect-square mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-                    <img alt={item.title} className="w-full h-full object-cover object-center" src={item.img} />
+                    <img
+                      alt={item.title}
+                      className="w-full h-full object-cover object-center"
+                      src={item.img}
+                    />
                   </div>
-                  <h3 className="font-semibold text-gray-900 text-sm mb-1">{item.title}</h3>
-                  <p className="text-xs text-gray-500">{item.label === "Produto Principal" ? "Produto Principal" : "Bônus Exclusivo"}</p>
+                  <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-gray-500">
+                    {item.label === "Produto Principal"
+                      ? "Produto Principal"
+                      : "Bônus Exclusivo"}
+                  </p>
                 </div>
               );
             })}
@@ -175,7 +210,9 @@ const WhatIncludes = () => {
             >
               Quero o Kit Completo por R$ 19,90
             </a>
-            <p className="text-sm text-gray-500 mt-4">⚡ Oferta limitada - Economia de R$ 46,00</p>
+            <p className="text-sm text-gray-500 mt-4">
+              ⚡ Oferta limitada - Economia de R$ 46,00
+            </p>
           </div>
         </div>
       </section>
