@@ -128,6 +128,8 @@ const WhatIncludes = () => {
         </p>
       </div>
     </section>
+     );
+};
 
       {/* Seção Kit Completo */}
       <section
