@@ -88,7 +88,6 @@ const WhatIncludes = () => {
             </div>
           </div>
         </div>
-      </section>
           {/* Botões de navegação */}
           <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
             <a
