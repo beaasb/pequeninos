@@ -61,7 +61,7 @@ const CompleteKit = () => {
       window.fbq('track', 'AddToCart', {
         content_name: 'Kit Completo - Colorindo com Jesus',
         content_ids: ['SKU_KIT_001'],
-        value: 29.90,
+        value: 19.90,
         currency: 'BRL'
       });
     }
