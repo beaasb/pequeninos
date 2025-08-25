@@ -57,16 +57,18 @@ const WhatIncludes = () => {
           </div>
 
           {/* Grid de conteúdos */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12"> {/* aqui aumentei a margem inferior */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-24">
                 {includes.map((item, index) => (
                   <div key={index} className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                     <div className="mb-5 rounded-xl overflow-hidden shadow-md w-full h-full">
                       <img src={item.image} alt={item.alt || item.title} className="object-cover w-full h-full" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
-                    <p className="text-gray-600 text-sm text-center mb-6">{item.description}</p> {/* adicionei mb-6 aqui */}
+                    <p className="text-gray-600 text-sm text-center mb-6">{item.description}</p>
                   </div>
                 ))}
+              </div>
+
               </div>
               
               {/* Botões de navegação com destaque em valor */}
