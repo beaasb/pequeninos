@@ -20,6 +20,22 @@ const Hero = () => {
               para as crianças e percebeu que elas se distraem?
             </h1>
 
+            {/* Imagem */}
+          <div className="flex justify-center px-4">
+            <div className="relative">
+              <div className="p-3 md:p-4 bg-gradient-to-br from-yellow-200 to-orange-300 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                <div className="absolute -top-4 -right-4 w-12 h-12 md:w-16 md:h-16 bg-yellow-400 rounded-full flex items-center justify-center text-xl md:text-2xl animate-bounce shadow-lg">
+                  ⭐
+                </div>
+                <img 
+                  src="https://i.imgur.com/R8rgJs9.png" 
+                  alt="Capa do livro Colorindo com Jesus"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>                     
+            </div>
+          </div>
+
             {/* 🚨 Subhead com clareza do formato */}
             <p className="text-xl text-gray-600 mb-6 leading-relaxed">
               Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:
@@ -64,21 +80,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Imagem */}
-          <div className="flex justify-center px-4">
-            <div className="relative">
-              <div className="p-3 md:p-4 bg-gradient-to-br from-yellow-200 to-orange-300 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="absolute -top-4 -right-4 w-12 h-12 md:w-16 md:h-16 bg-yellow-400 rounded-full flex items-center justify-center text-xl md:text-2xl animate-bounce shadow-lg">
-                  ⭐
-                </div>
-                <img 
-                  src="https://i.imgur.com/R8rgJs9.png" 
-                  alt="Capa do livro Colorindo com Jesus"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>                     
-            </div>
-          </div>
+          
 
         </div>
       </div>
