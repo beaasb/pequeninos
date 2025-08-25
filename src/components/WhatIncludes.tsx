@@ -1,5 +1,12 @@
 import React from "react";
-import { BookOpen, Gift, Calendar, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  BookOpen,
+  Gift,
+  Calendar,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -12,25 +19,21 @@ const WhatIncludes = () => {
       image: "https://i.imgur.com/Ny8TuXk.png",
       alt: "Sessões Temáticas",
       title: "6 Sessões Temáticas",
-      description: "Com versículos e desenhos",
     },
     {
       image: "https://i.imgur.com/qKSGCUd.png",
       alt: "Atividades Criativas",
       title: "6 Atividades Criativas",
-      description: "Jogos e brincadeiras bíblicas",
     },
     {
       image: "https://i.imgur.com/033kwqr.png",
       alt: "Checklist de Progresso",
       title: "Checklist de Progresso",
-      description: "Acompanhe o desenvolvimento",
     },
     {
       image: "https://i.imgur.com/imPCbhF.png",
       alt: "Certificado de Conclusão",
       title: "Certificado de Conclusão",
-      description: "Para motivar a criança (brinde)",
     },
   ];
 
@@ -64,11 +67,15 @@ const WhatIncludes = () => {
         </div>
 
         {/* Carrossel */}
-        <div className="relative max-w-md mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           <Swiper
             modules={[Navigation, Pagination]}
-            spaceBetween={40}
+            spaceBetween={30}
             slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
             loop={true}
             navigation={{
               prevEl: ".custom-prev",
@@ -78,16 +85,13 @@ const WhatIncludes = () => {
             className="rounded-xl"
           >
             {includes.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="text-center">
-                  <h3 className="text-lg font-bold text-gray-800 mb-3">{item.title}</h3>
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-64 md:w-80 mx-auto rounded-xl shadow-md"
-                  />
-                  <p className="text-gray-600 text-sm mt-4">{item.description}</p>
-                </div>
+              <SwiperSlide key={index} className="flex flex-col items-center">
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  className="w-64 md:w-72 rounded-xl shadow-md"
+                />
+                <h3 className="text-lg font-bold text-gray-800 mt-2">{item.title}</h3>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -125,7 +129,112 @@ const WhatIncludes = () => {
       </div>
     </section>
 
-    {/* Seção Kit Completo */} <section id="kit-completo" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50" > <div className="container mx-auto px-4 sm:px-6 lg:px-8"> <div className="text-center mb-16"> <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4 mx-auto"> <Gift className="w-4 h-4 mr-2" /> KIT COMPLETO - 4 PRODUTOS </div> <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"> Veja o Que Inclui o Kit Completo </h2> <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"> 4 produtos exclusivos para transformar completamente os momentos especiais da sua família </p> <div className="mx-auto mb-8"> <img src="https://i.imgur.com/sNSpDyB.png" className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1" alt="Mockup Kit + Bônus" /> </div> </div> {/* Grid de produtos */} <div className="max-w-6xl mx-auto mb-12 grid grid-cols-2 md:grid-cols-4 gap-4"> {[ { title: "Colorindo com Jesus", label: "Produto Principal", icon: BookOpen, img: "https://i.imgur.com/R8rgJs9.png", color: "blue", }, { title: "Planner Devocional Infantil", label: "Bônus 1", icon: Calendar, img: "https://i.imgur.com/AGIOmiE.png", color: "green", }, { title: "Desafios Bíblicos", label: "Bônus 2", icon: Gift, img: "https://i.imgur.com/JyYOhmO.png", color: "purple", }, { title: "Devocional para Pais", label: "Bônus 3", icon: Star, img: "https://i.imgur.com/Cso15H3.png", color: "yellow", }, ].map((item, index) => { const Icon = item.icon; return ( <div key={index} className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-200" > <div className="text-center mb-3"> <div className={inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-${item.color}-100 text-${item.color}-800} > <Icon className="w-3 h-3 mr-1" /> {item.label} </div> </div> <div className="w-full aspect-square mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100"> <img alt={item.title} className="w-full h-full object-cover object-center" src={item.img} /> </div> <h3 className="font-semibold text-gray-900 text-sm mb-1"> {item.title} </h3> <p className="text-xs text-gray-500"> {item.label === "Produto Principal" ? "Produto Principal" : "Bônus Exclusivo"} </p> </div> ); })} </div> <div className="text-center"> <a href="#oferta-kit" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 h-14 px-8 py-4 text-lg font-bold" > Quero o Kit Completo por R$ 19,90 </a> <p className="text-sm text-gray-500 mt-4"> ⚡ Oferta limitada - Economia de R$ 46,00 </p> </div> </div> </section> </> ); };
+      {/* Seção Kit Completo */}
+      <section
+        id="kit-completo"
+        className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4 mx-auto">
+              <Gift className="w-4 h-4 mr-2" /> KIT COMPLETO - 4 PRODUTOS
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Veja o Que Inclui o Kit Completo
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              4 produtos exclusivos para transformar completamente os momentos
+              especiais da sua família
+            </p>
+
+            <div className="mx-auto mb-8">
+              <img
+                src="https://i.imgur.com/sNSpDyB.png"
+                className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
+                alt="Mockup Kit + Bônus"
+              />
+            </div>
+          </div>
+
+          {/* Grid de produtos */}
+          <div className="max-w-6xl mx-auto mb-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              {
+                title: "Colorindo com Jesus",
+                label: "Produto Principal",
+                icon: BookOpen,
+                img: "https://i.imgur.com/R8rgJs9.png",
+                color: "blue",
+              },
+              {
+                title: "Planner Devocional Infantil",
+                label: "Bônus 1",
+                icon: Calendar,
+                img: "https://i.imgur.com/AGIOmiE.png",
+                color: "green",
+              },
+              {
+                title: "Desafios Bíblicos",
+                label: "Bônus 2",
+                icon: Gift,
+                img: "https://i.imgur.com/JyYOhmO.png",
+                color: "purple",
+              },
+              {
+                title: "Devocional para Pais",
+                label: "Bônus 3",
+                icon: Star,
+                img: "https://i.imgur.com/Cso15H3.png",
+                color: "yellow",
+              },
+            ].map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-gray-200"
+                >
+                  <div className="text-center mb-3">
+                    <div
+                      className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-${item.color}-100 text-${item.color}-800`}
+                    >
+                      <Icon className="w-3 h-3 mr-1" /> {item.label}
+                    </div>
+                  </div>
+                  <div className="w-full aspect-square mb-3 rounded-lg overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+                    <img
+                      alt={item.title}
+                      className="w-full h-full object-cover object-center"
+                      src={item.img}
+                    />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-gray-500">
+                    {item.label === "Produto Principal"
+                      ? "Produto Principal"
+                      : "Bônus Exclusivo"}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="text-center">
+            <a
+              href="#oferta-kit"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 h-14 px-8 py-4 text-lg font-bold"
+            >
+              Quero o Kit Completo por R$ 19,90
+            </a>
+            <p className="text-sm text-gray-500 mt-4">
+              ⚡ Oferta limitada - Economia de R$ 46,00
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
