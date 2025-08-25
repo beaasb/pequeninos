@@ -17,12 +17,12 @@ const testimonials = [
     message: "O livro digital é ótimo! Posso imprimir várias vezes e as crianças sempre se envolvem."
   },
   {
-    name: "Camila Ribeiro",
+    name: "Lurdes Moraes",
     photo: "https://i.imgur.com/on1LtFX.png",
     message: "Amei o conteúdo! As histórias da Bíblia ficam mais vivas e divertidas para os pequenos."
   },
   {
-    name: "Lucas Fernandes",
+    name: "Lucas Souza",
     photo: "https://i.imgur.com/EnCDRsb.png",
     message: "Um material educativo que realmente aproxima as crianças da Palavra de Deus."
   }
