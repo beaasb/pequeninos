@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Gift, Calendar, Star } from 'lucide-react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -57,65 +57,65 @@ const WhatIncludes = () => {
   };
 
   return (
-    <section id="conteudo-incluso" className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
-            <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Veja o que você vai receber
-          </h2>
-          <p className="text-xl text-gray-600 mb-8"> 
-            Um livro completo para o desenvolvimento espiritual e criativo do seu filho
-          </p>                    
-
-          <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg mb-8" style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.2))' }}>
-            <img
-              src="https://i.imgur.com/GD6dHoU.png"
-              className="w-full transition-transform duration-500 hover:scale-110 hover:rotate-2"
-              alt="Mockup Livro Colorindo com Jesus + Conteúdo"
-            />
-          </div>
-        </div>
-
-        {/* Carrossel */}
-        <Slider {...settings}>
-          {includes.map((item, index) => (
-            <div key={index} className="px-4">
-              <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                <img src={item.image} alt={item.alt || item.title} className="w-64 md:w-80 lg:w-96 object-cover rounded-xl mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
-                <p className="text-gray-600 text-sm text-center">{item.description}</p>
-              </div>
+    <>
+      {/* Seção do Livro */}
+      <section id="conteudo-incluso" className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
+              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
             </div>
-          ))}
-        </Slider>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Veja o que você vai receber
+            </h2>
+            <p className="text-xl text-gray-600 mb-8"> 
+              Um livro completo para o desenvolvimento espiritual e criativo do seu filho
+            </p>                    
 
-        {/* Botões de navegação */}
-        <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
-          <a 
-            href="#oferta-principal"
-            className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-          >
-            Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
-          </a>
-          <a 
-            href="#oferta-kit"
-            className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-          >
-            Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
-          </a>
+            {/* Mockup do Livro em tamanho real, sem sombra */}
+            <div className="mx-auto mb-8">
+              <img
+                src="https://i.imgur.com/GD6dHoU.png"
+                className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
+                alt="Mockup Livro Colorindo com Jesus + Conteúdo"
+              />
+            </div>
+          </div>
+
+          {/* Carrossel */}
+          <Slider {...settings}>
+            {includes.map((item, index) => (
+              <div key={index} className="px-4">
+                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                  <img src={item.image} alt={item.alt || item.title} className="w-64 md:w-80 lg:w-96 object-cover rounded-xl mb-4" />
+                  <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
+                  <p className="text-gray-600 text-sm text-center">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+
+          {/* Botões de navegação */}
+          <div className="flex flex-wrap gap-4 justify-center pt-8 mb-6">
+            <a 
+              href="#oferta-principal"
+              className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+            >
+              Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
+            </a>
+            <a 
+              href="#oferta-kit"
+              className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+            >
+              Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
+            </a>
+          </div>
+
+          <p className="text-center text-gray-600 font-medium">
+            Kit completo inclui o livro + 3 bônus exclusivos por R$ 19,90
+          </p>
         </div>
-
-        <p className="text-center text-gray-600 font-medium">
-          Kit completo inclui o livro + 3 bônus exclusivos por R$ 19,90
-        </p>
-      </div>
-    </section>
-  );
-}
-
+      </section>
 
       {/* Nova seção Kit Completo */}
       <section id="kit-completo" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -131,11 +131,11 @@ const WhatIncludes = () => {
               4 produtos exclusivos para transformar completamente os momentos especiais da sua família
             </p>
 
-            {/* Mockup do Kit */}
-            <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg mb-8" style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.2))' }}>
+            {/* Mockup do Kit em tamanho real, sem sombra */}
+            <div className="mx-auto mb-8">
               <img
                 src="https://i.imgur.com/sNSpDyB.png"
-                className="w-full transition-transform duration-500 hover:scale-110 hover:rotate-2"
+                className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
                 alt="Mockup Kit + Bônus"
               />
             </div>
@@ -179,6 +179,8 @@ const WhatIncludes = () => {
           </div>
         </div>
       </section>
-   
+    </>
+  );
+};
 
 export default WhatIncludes;
