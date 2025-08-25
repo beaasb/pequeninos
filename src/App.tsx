@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 // Declaração global do fbq para TypeScript
 declare global {
   interface Window {
-    fbq: any;
+    fbq: any; 
   }
 }
 
