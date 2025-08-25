@@ -179,8 +179,6 @@ const WhatIncludes = () => {
           </div>
         </div>
       </section>
-    
-  );
-};
+   
 
 export default WhatIncludes;
