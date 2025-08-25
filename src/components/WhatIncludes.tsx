@@ -64,7 +64,7 @@ const WhatIncludes = () => {
                       <img src={item.image} alt={item.alt || item.title} className="object-cover w-full h-full" />
                     </div>
                     <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
-                    <p className="text-gray-600 text-sm text-center mb-10">{item.description}</p>
+                    <p className="text-gray-600 text-sm text-center mb-1">{item.description}</p>
                   </div>
                 ))}
               </div>
