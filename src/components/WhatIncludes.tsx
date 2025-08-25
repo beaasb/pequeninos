@@ -105,7 +105,7 @@ const WhatIncludes = () => {
             </p>
 
             {/* Mockup do Livro */}
-            <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg" style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
+            <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg" style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}>            
               <img
                 src="https://i.imgur.com/GD6dHoU.png"
                 className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
