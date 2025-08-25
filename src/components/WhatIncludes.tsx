@@ -34,6 +34,10 @@ const WhatIncludes = () => {
       <section id="conteudo-incluso" className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
+            {/* Destaque do produto digital */}
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
+              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Veja o que você vai receber
             </h2>
@@ -41,10 +45,7 @@ const WhatIncludes = () => {
               Um livro completo para o desenvolvimento espiritual e criativo do seu filho
             </p>         
 
-            {/* Destaque do produto digital */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
-              <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
-            </div>
+            
 
             {/* Mockup do Livro */}
             <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg mb-8"
