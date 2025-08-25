@@ -57,33 +57,34 @@ const WhatIncludes = () => {
           </div>
 
           {/* Grid de conteúdos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-            {includes.map((item, index) => (
-              <div key={index} className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                <div className="mb-5 rounded-xl overflow-hidden shadow-md w-full h-full">
-                  <img src={item.image} alt={item.alt || item.title} className="object-cover w-full h-full" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
-                <p className="text-gray-600 text-sm text-center">{item.description}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12"> {/* aqui aumentei a margem inferior */}
+                {includes.map((item, index) => (
+                  <div key={index} className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div className="mb-5 rounded-xl overflow-hidden shadow-md w-full h-full">
+                      <img src={item.image} alt={item.alt || item.title} className="object-cover w-full h-full" />
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2 text-center">{item.title}</h3>
+                    <p className="text-gray-600 text-sm text-center mb-6">{item.description}</p> {/* adicionei mb-6 aqui */}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+              
+              {/* Botões de navegação com destaque em valor */}
+              <div className="flex flex-wrap gap-4 justify-center mb-6">
+                <a 
+                  href="#oferta-principal"
+                  className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                >
+                  Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
+                </a>
+                <a 
+                  href="#oferta-kit"
+                  className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                >
+                  Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
+                </a>
+              </div>
 
-          {/* Botões de navegação com destaque em valor */}
-          <div className="flex flex-wrap gap-4 justify-center mb-6">
-            <a 
-              href="#oferta-principal"
-              className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-            >
-              Quero Somente o Livro <span className="ml-1 font-semibold text-yellow-200">R$ 9,90</span>
-            </a>
-            <a 
-              href="#oferta-kit"
-              className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
-            >
-              Quero o Kit Completo <span className="ml-1 font-semibold text-yellow-200">R$ 19,90</span>
-            </a>
-          </div>
 
           {/* Legenda reforçando a oferta do kit */}
           <p className="text-center text-gray-600 font-medium">
