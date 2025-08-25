@@ -132,9 +132,10 @@ const WhatIncludes = () => {
                 pagination={{ clickable: true }}
                 className="rounded-xl"
               >
+                <h3 className="text-lg font-bold text-gray-800 mt-4">{item.title}</h3>
                 {includes.map((item, index) => (
                   <SwiperSlide key={index} className="flex flex-col items-center">
-                    <h3 className="text-lg font-bold text-gray-800 mt-4">{item.title}</h3>
+                    
                     <img
                       src={item.image}
                       alt={item.alt}
