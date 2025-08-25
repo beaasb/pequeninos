@@ -179,7 +179,7 @@ const WhatIncludes = () => {
           </div>
         </div>
       </section>
-    />
+    
   );
 };
 
