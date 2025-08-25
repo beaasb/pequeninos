@@ -43,9 +43,7 @@ const WhatIncludes = () => {
             </h2>
             <p className="text-xl text-gray-600 mb-8"> 
               Um livro completo para o desenvolvimento espiritual e criativo do seu filho
-            </p>         
-
-            
+            </p>                    
 
             {/* Mockup do Livro */}
             <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg mb-8"
@@ -72,7 +70,7 @@ const WhatIncludes = () => {
           </div>
 
           {/* Botões de navegação com destaque em valor */}
-          <div className="flex flex-wrap gap-4 justify-center mb-6">
+          <div className="flex flex-wrap gap-4 justify-center mb-10">
             <a 
               href="#oferta-principal"
               className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
