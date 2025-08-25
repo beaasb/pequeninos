@@ -2,28 +2,28 @@ import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    name: "Ronie Alves",
-    photo: "https://i.imgur.com/6Jf2TsX.png",
+    name: "Lucio Alves",
+    photo: "https://i.imgur.com/wZAaM8g.png",
     message: "Meu filho adorou colorir as histórias da Bíblia! Muito divertido e educativo."
   },
   {
     name: "Mariana Costa",
-    photo: "https://i.imgur.com/utbDpkP.png",
+    photo: "https://i.imgur.com/UNqvWuB.png",
     message: "Finalmente conseguimos momentos de aprendizado em família com o Pequeninos™."
   },
   {
-    name: "João Pedro Oliveira",
-    photo: "https://i.imgur.com/dk2hnXd.png",
+    name: "Maria Fátima Cruz",
+    photo: "https://i.imgur.com/3YntEON.png",
     message: "O livro digital é ótimo! Posso imprimir várias vezes e as crianças sempre se envolvem."
   },
   {
     name: "Camila Ribeiro",
-    photo: "https://i.imgur.com/Wf629TN.png",
+    photo: "https://i.imgur.com/on1LtFX.png",
     message: "Amei o conteúdo! As histórias da Bíblia ficam mais vivas e divertidas para os pequenos."
   },
   {
     name: "Lucas Fernandes",
-    photo: "https://i.imgur.com/HyQcBFL.png",
+    photo: "https://i.imgur.com/EnCDRsb.png",
     message: "Um material educativo que realmente aproxima as crianças da Palavra de Deus."
   }
 ];
