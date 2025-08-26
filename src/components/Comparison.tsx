@@ -153,7 +153,7 @@ const ImageComparison: React.FC<ComparisonProps> = ({
       {/* Gradiente com texto abaixo */}
       <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center px-4 py-8 md:py-12 bg-gradient-to-b from-transparent to-pink-100">
         <h2 className="text-2xl md:text-3xl font-bold leading-snug mb-4">
-          Ainda Hoje, seu filho você vai entender os ensinamentos bíblicos 
+          Ainda Hoje, seu filho vai entender os ensinamentos bíblicos 
           usando esse inédito material. Chega de Dúvidas!
         </h2>
         <div className="mt-10 mb-5">
@@ -161,7 +161,7 @@ const ImageComparison: React.FC<ComparisonProps> = ({
             href="#oferta-principal"
             className="bg-black text-white px-6 py-4 rounded-sm text-sm font-bold hover:bg-green-800 transition" 
           >
-            QUERO ADQUIRIR O MEU
+            QUERO ADQUIRIR AGORA
           </a>
         </div>
       </div>
