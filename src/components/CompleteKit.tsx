@@ -92,7 +92,7 @@ const CompleteKit = () => {
             <div className="relative z-10">
               <div className="text-center mb-6">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">OFERTA PRINCIPAL</h3>
-                <p className="text-muted-foreground text-gray-500">Livro de Colorir Cristão do Pequeninos™</p>
+                <p className="text-muted-foreground text-gray-500">Livro Colorindo com Jesus do Pequeninos™</p>
               </div>
 
               <div className="text-center mb-6">
@@ -152,7 +152,7 @@ const CompleteKit = () => {
                 <Gift className="w-3 h-3 mr-1" /> KIT COMPLETO - 4 PRODUTOS
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">OFERTA ESPECIAL</h3>
-              <p className="text-green-100 mb-6">Produto Principal + 3 Bônus Exclusivos</p>
+              <p className="text-green-100 mb-6">Produto Principal (livro Colorindo com Jesus)+ 3 Bônus Exclusivos</p>
 
               <div className="flex items-center justify-center gap-3 mb-2">
                 <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">R$ 65,90</span>
