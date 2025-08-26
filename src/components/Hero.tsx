@@ -14,8 +14,8 @@ const Hero = () => {
 
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-          Quantas vezes você já tentou ensinar a Bíblia <br /> 
-          para as crianças e percebeu que elas se distraem?
+          Transforme distração em aprendizado <br /> 
+          com diversão e fé!
         </h1>
 
         {/* Imagem */}
