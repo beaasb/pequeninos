@@ -32,7 +32,7 @@ const Hero = () => {
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
           Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:
           <strong> um Livro de Colorir Cristão em PDF</strong>, com entrega imediata para você imprimir quantas vezes quiser.
-          <span style={{ color: "green" }}>Por apenas R$ 12,90</span>
+          <span style={{ color: "green",fontWeight: "bold" }}>Por apenas R$ 12,90</span>
         </p>
 
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
