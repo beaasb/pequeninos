@@ -45,14 +45,8 @@ const Hero = () => {
             href="#oferta-principal"
             className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
           >
-            📘 Baixar PDF Agora
-          </a>
-          <a 
-            href="#oferta-kit"
-            className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
-          >
-            🎁 Quero o Kit Completo (PDF)
-          </a>
+            QUERO ADQUIRIR AGORA
+          </a>          
           <a 
             href="#conteudo-incluso"
             className="border-2 border-yellow-500 text-yellow-500 px-6 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
