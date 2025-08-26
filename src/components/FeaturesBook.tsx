@@ -37,5 +37,3 @@ export default function FeaturesBook() {
     </section>
   );
 }
-
-export default FeaturesBook;
