@@ -1,5 +1,5 @@
 import { Clock, CheckCircle, BookOpen, HandsPraying } from "lucide-react";
-
+ 
 export default function FeaturesBook() {
   return (
     <section className="w-full py-12 bg-gradient-to-r from-indigo-600 to-blue-700 text-white">
