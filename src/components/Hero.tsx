@@ -51,7 +51,7 @@ const Hero = () => {
             href="#conteudo-incluso"
             className="border-2 border-yellow-500 text-yellow-500 px-6 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
           >
-            📦 O que vou receber?
+            O que vou receber?
           </a>
         </div>
 
