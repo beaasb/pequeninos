@@ -1,5 +1,5 @@
-import { Clock, CheckCircle, BookOpen, HandsPraying } from "lucide-react";
- 
+import { Clock, CheckCircle, BookOpen, HandHeart } from "lucide-react";
+
 export default function FeaturesBook() {
   return (
     <section className="w-full py-12 bg-gradient-to-r from-indigo-600 to-blue-700 text-white">
@@ -29,7 +29,7 @@ export default function FeaturesBook() {
           </div>
 
           <div className="flex items-center gap-3">
-            <HandsPraying className="w-6 h-6 text-purple-300" />
+            <HandHeart className="w-6 h-6 text-purple-300" />
             <span className="text-lg font-semibold">Proximidade de Deus</span>
           </div>
         </div>
