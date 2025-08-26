@@ -108,7 +108,7 @@ const CompleteKit = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
-                {["Livro com versículos e atividades", "Certificado incluso", "Imprima quantas vezes quiser", "Para todas as idades"].map((item) => (
+                {["Livro com 20 páginas de versículos e desenhos mais atividades", "Certificado incluso", "Imprima quantas vezes quiser", "Para todas as idades"].map((item) => (
                   <div key={item} className="flex items-center">
                     <Check className="w-5 h-5 mr-2 flex-shrink-0 text-orange-500" />
                     <span className="text-sm">{item}</span>
@@ -161,7 +161,7 @@ const CompleteKit = () => {
               <p className="text-sm text-green-100 mb-6">Economia de R$ 46,00!</p>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
-                {["Livro Colorindo com Jesus + Bônus Inclusos no livro acima", "Planner Devocional Infantil", "Livro de Desafios Biblicos Infantil", "Devocional para os Pais"].map((item) => (
+                {["Livro Colorindo com Jesus + Bônus Inclusos no livro acima", "Planner Devocional Infantil (com mais de 100 páginas)", "Livro de Desafios Biblicos Infantil", "Devocional para os Pais"].map((item) => (
                   <div key={item} className="flex items-center text-green-300">
                     <Check className="w-5 h-5 mr-2 flex-shrink-0" />
                     <span className="text-sm">{item}</span>
