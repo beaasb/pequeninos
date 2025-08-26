@@ -8,7 +8,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,22 +16,27 @@ import "swiper/css/pagination";
 const WhatIncludes = () => {
   const includes = [
     {
-      title: "6 Sessões Temáticas",
-      image: "https://i.imgur.com/Ny8TuXk.png",
-      alt: "Sessões Temáticas",
-    },
-    {
-      image: "https://i.imgur.com/qKSGCUd.png",
-      alt: "Atividades Criativas",
-      title: "6 Atividades Criativas",
-    },
-    {
-      image: "https://i.imgur.com/033kwqr.png",
+      image: "https://i.imgur.com/XDZXarY.png",
       alt: "Checklist de Progresso",
       title: "Checklist de Progresso",
     },
     {
-      image: "https://i.imgur.com/imPCbhF.png",
+      title: "2 Sessões Temáticas",
+      image: "https://i.imgur.com/dqKEHrA.png",
+      alt: "Sessões Temáticas",
+    },
+    {
+      title: "3 Sessões Temáticas",
+      image: "https://i.imgur.com/mNUXXJo.png",
+      alt: "Sessões Temáticas",
+    },
+    {
+      image: "https://i.imgur.com/D4SoMyJ.png",
+      alt: "Atividades Criativas",
+      title: "6 Atividades Criativas",
+    },    
+    {
+      image: "https://i.imgur.com/8ulITpE.png",
       alt: "Certificado de Conclusão",
       title: "Certificado de Conclusão",
     },
@@ -97,10 +102,10 @@ const WhatIncludes = () => {
               <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima
               quantas vezes quiser
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Veja o que você vai receber
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"> 
+              VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-1">
               Um livro completo para o desenvolvimento espiritual e criativo do seu filho
             </p>
 
@@ -114,53 +119,79 @@ const WhatIncludes = () => {
             </div>
           </div>
 
-          {/* Carrossel */}
+         {/* Carrossel */}
             <div className="relative max-w-4xl mx-auto">
               <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={40} // aumenta o espaço entre os slides
-                slidesPerView={1}
-                breakpoints={{
-                  640: { slidesPerView: 2, spaceBetween: 40 },
-                  1024: { slidesPerView: 3, spaceBetween: 50 },
-                }}
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={20}
                 loop={true}
+                speed={500}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
                 navigation={{
                   prevEl: ".custom-prev",
-                  nextEl: ".custom-next", 
+                  nextEl: ".custom-next",
                 }}
-                pagination={{ clickable: true }}
-                className="rounded-xl"
+                pagination={{ 
+                  clickable: true,
+                  el: ".custom-pagination"
+                }}
+                breakpoints={{
+                  0: { slidesPerView: 1 },   // Mobile
+                  768: { slidesPerView: 2 }, // Tablet/desktop
+                }}
+                className="elementor-image-carousel"
               >
                 {includes.map((item, index) => (
-                  <SwiperSlide key={index} className="flex flex-col items-center">
-                    <h3 className="text-lg font-bold text-gray-800 mt-4">{item.title}</h3>
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      className="w-72 md:w-80 lg:w-96 rounded-xl shadow-md"
-                    />
-                    
+                  <SwiperSlide key={index}>
+                    <figure className="swiper-slide-inner flex justify-center items-center">
+                      <img
+                        src={item.image}
+                        alt={item.alt}
+                        className="max-h-[700px] w-auto object-contain rounded-lg shadow-md"
+                      />
+                    </figure>
                   </SwiperSlide>
                 ))}
               </Swiper>
             
-              {/* Botões do Swiper */}
-              <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+              {/* Botões iguais ao Elementor */}
+              <div className="custom-prev elementor-swiper-button elementor-swiper-button-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 cursor-pointer">
                 <ChevronLeft className="w-6 h-6 text-gray-700" />
-              </button>
-              <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10">
+              </div>
+              <div className="custom-next elementor-swiper-button elementor-swiper-button-next absolute top-1/2 right-2 -translate-y-1/2 z-10 cursor-pointer">
                 <ChevronRight className="w-6 h-6 text-gray-700" />
-              </button>
+              </div>
+            
+              {/* Paginação customizada (sempre renderizada) */}
+              <div className="custom-pagination mt-6 flex justify-center"></div>
             </div>
             
-            {/* Estilo adicional para espaçamento das bolinhas */}
+            {/* CSS extra */}
             <style jsx>{`
-              .swiper-pagination {
-                margin-top: 1.5rem !important; /* aumenta distância entre imagem e bolinhas */
+              .swiper-wrapper {
+                align-items: center; /* centraliza imagens verticalmente */
+              }
+              .swiper-slide-inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .custom-pagination .swiper-pagination-bullet {
+                background: #555;
+                opacity: 0.6;
+                width: 10px;
+                height: 10px;
+                margin: 0 4px;
+              }
+              .custom-pagination .swiper-pagination-bullet-active {
+                background: #000;
+                opacity: 1;
               }
             `}</style>
-
 
           {/* Botões de compra */}
           <div className="flex flex-wrap gap-4 justify-center pt-12 mb-6">
@@ -259,3 +290,4 @@ const WhatIncludes = () => {
 };
 
 export default WhatIncludes;
+ 
