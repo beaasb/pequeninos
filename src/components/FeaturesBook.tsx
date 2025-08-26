@@ -15,7 +15,7 @@ export default function FeaturesBook() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 text-left">
           <div className="flex items-center gap-3">
             <Clock className="w-6 h-6 text-yellow-300" />
-            <span className="text-lg font-semibold">Leitura Rápida</span>
+            <span className="text-lg font-semibold">Aprendizado Rápido</span>
           </div>
 
           <div className="flex items-center gap-3">
