@@ -31,5 +31,12 @@ export default function FeaturesBook() {
         </div>
       </div>
     </section>
+    <section className="w-full py-12 bg-gradient-to-br from-purple-100 to-pink-100 text-gray-700">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* Título */}
+        <h2 className="text-2xl sm:text-3xl font-bold leading-snug">
+          Nosso material irá transformar o seu estudo e leitura bíblica! Simples, Prático e Fácil.
+        </h2>
+        </section>
   );
 }
