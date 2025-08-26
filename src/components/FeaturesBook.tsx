@@ -12,7 +12,7 @@ export default function FeaturesBook() {
         </h2>
 
         {/* Lista de benefícios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 text-left bg-white/10">
           <div className="flex items-center gap-3">
             <Clock className="w-6 h-6 text-yellow-300" />
             <span className="text-lg font-semibold">Aprendizado Rápido</span>
