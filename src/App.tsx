@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import SpoilerBook from './components/SpoilerBook';
+import FeaturesBook from ".components/FeaturesBook";
 import Comparison from './components/Comparison';
 import WhatIncludes from './components/WhatIncludes';
 import WhereToUse from './components/WhereToUse';
@@ -36,7 +37,8 @@ function App() {
   return (
     <div className="min-h-screen"> 
       <Hero />
-      <SpoilerBook /> 
+      <SpoilerBook />
+      <FeaturesBook />
       <Comparison/>
       <WhatIncludes />            
       <WhereToUse />
