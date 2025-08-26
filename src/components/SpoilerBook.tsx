@@ -78,14 +78,6 @@ const SpoilerBook = () => {
 
           <div className="custom-pagination mt-6 flex justify-center"></div>
         </div>
-
-        {/* Botões */}
-        <div className="flex flex-wrap gap-4 justify-center pt-12 mb-6">
-          <a className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">{offerPrimary}</a>
-          <a className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">{offerKit}</a>
-        </div>
-
-        <p className="text-center text-gray-600 font-medium">Kit completo inclui o livro + 3 bônus exclusivos por R$ 19,90</p>
       </div>
     </section>
   );
