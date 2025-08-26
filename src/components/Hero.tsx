@@ -28,8 +28,7 @@ const Hero = () => {
                   src="https://i.imgur.com/FTgi443.png" 
                   alt="Capa do livro Colorindo com Jesus"
                   className="w-full h-full object-cover object-center"
-                />
-              </div>                     
+                />                   
             </div>
           </div>
 
