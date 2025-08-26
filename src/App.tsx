@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import WhereToUse from './components/WhereToUse';
+import SpoilerBook from './components/SpoilerBook';
+import Comparison from './components/Comparison';
 import WhatIncludes from './components/WhatIncludes';
+import WhereToUse from './components/WhereToUse';
 import CompleteKit from './components/CompleteKit';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -36,8 +38,10 @@ function App() {
     <div className="min-h-screen"> 
       <Header />
       <Hero />
+      <SpoilerBook /> 
+      <Comparison/>
+      <WhatIncludes />            
       <WhereToUse />
-      <WhatIncludes />      
       <Testimonials />
       <CompleteKit />
       <FAQ />
