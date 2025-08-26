@@ -14,7 +14,7 @@ export default function FeaturesBook() {
           </h2>
  
           {/* Lista de benefícios */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 text-center mb-2">
             <div className="inline-flex items-center justify-center px-4 py-4 rounded-full bg-white/50 text-gray-700 text-base font-medium backdrop-blur-sm shadow-sm">
               ⏰ Aprendizado Rápido
             </div>
