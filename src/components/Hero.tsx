@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-16 px-4">
+    <section className="bg-gradient-to-br from-blue-80 via-purple-90 to-pink-80 py-16 px-4">
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center gap-8">
         
         {/* Logo + marca */}
