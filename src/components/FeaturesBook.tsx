@@ -1,39 +1,47 @@
-import { Clock, CheckCircle, BookOpen, HandHeart } from "lucide-react";
+import React, { useEffect, useState } from 'react';
 
-export default function FeaturesBook() {
-  return (
-    <section className="w-full py-12 bg-gradient-to-r from-indigo-600 to-blue-700 text-white">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        {/* Título */}
-        <h2 className="text-2xl sm:text-3xl font-bold leading-snug">
-          Você receberá um material único{" "}
-          <u>totalmente ilustrado e organizado</u> para facilitar a sua
-          compreensão bíblica
-        </h2>
+const FeaturesBook: React.FC = () => {
+  const [status, setStatus] = useState<'loading' | 'ready'>('loading');
 
-        {/* Lista de benefícios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 text-left">
-          <div className="flex items-center gap-3">
-            <Clock className="w-6 h-6 text-yellow-300" />
-            <span className="text-lg font-semibold">Leitura Rápida</span>
-          </div>
+  useEffect(() => {
+    // Simula carregamento (ex: se no futuro puxar dados de API)
+    const timer = setTimeout(() => {
+      setStatus('ready');
+    }, 1000);
 
-          <div className="flex items-center gap-3">
-            <CheckCircle className="w-6 h-6 text-green-300" />
-            <span className="text-lg font-semibold">Fácil de entender</span>
-          </div>
+    return () => clearTimeout(timer);
+  }, []);
 
-          <div className="flex items-center gap-3">
-            <BookOpen className="w-6 h-6 text-pink-300" />
-            <span className="text-lg font-semibold">100% Fiel à Bíblia</span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <HandHeart className="w-6 h-6 text-purple-300" />
-            <span className="text-lg font-semibold">Proximidade de Deus</span>
-          </div>
-        </div>
+  if (status === 'loading') {
+    return (
+      <div className="fixed bottom-4 right-4 z-50 bg-white border border-gray-300 rounded-lg p-3 shadow-lg">
+        <span className="text-sm">Carregando benefícios...</span>
       </div>
-    </section>
+    );
+  }
+
+  return (
+    <div className="fixed bottom-4 right-4 z-50 bg-white border border-gray-300 rounded-lg p-4 shadow-lg max-w-sm">
+      <h2 className="text-base font-bold text-gray-800 mb-3">
+        Você receberá um material único <u>totalmente ilustrado e organizado</u> para facilitar a sua compreensão bíblica
+      </h2>
+
+      <ul className="space-y-2 text-sm text-gray-700">
+        <li className="flex items-center gap-2">
+          <span className="text-lg">⏰</span> Leitura Rápida
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="text-lg">✅</span> Fácil de entender
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="text-lg">📖</span> 100% Fiel à Bíblia
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="text-lg">🙏🏻</span> Proximidade de Deus
+        </li>
+      </ul>
+    </div>
   );
-}
+};
+
+export default FeaturesBook;
