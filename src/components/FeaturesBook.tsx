@@ -35,7 +35,7 @@ export default function FeaturesBook() {
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Título */}
         <h2 className="text-2xl sm:text-3xl font-bold leading-snug">
-          Nosso material irá transformar o seu estudo e leitura bíblica! Simples, Prático e Fácil.
+          Leitura, aprendizado e diversão unidos em um só propósito: aproximar as crianças da Palavra de Deus
         </h2>
         </section>
   );
