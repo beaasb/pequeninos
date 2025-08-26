@@ -13,29 +13,29 @@ const Hero = () => {
         </div>
 
         {/* Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
           Transforme distração em aprendizado <br /> 
           com diversão e fé!
         </h1>
 
         {/* Imagem */}
-        <div className="w-full flex justify-center px-10">
+        <div className="w-full flex justify-center px-4">
           <img 
             src="https://i.imgur.com/FTgi443.png" 
             alt="Capa do livro Colorindo com Jesus"
-            className="mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-            style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}
+            className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
+            style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}
           />
         </div>
 
         {/* Subhead */}
-        <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-          Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:
-          <strong> um Livro de Colorir Cristão em PDF</strong>, com entrega imediata para você imprimir quantas vezes quiser.{" "}
-          <span style={{ color: "green",fontWeight: "bold" }}>Por apenas R$ 12,90</span>
+        <p className="text-lg sm:text-2xl md:text-2xl text-gray-700 leading-relaxed">
+          Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:{" "}
+          <strong>um Livro de Colorir Cristão em PDF</strong>, com entrega imediata para você imprimir quantas vezes quiser.{" "}
+          <span style={{ color: "green", fontWeight: "bold" }}>Por apenas R$ 12,90</span>
         </p>
 
-        <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed">
           Atividades rápidas, criativas e cheias de significado que unem pais e filhos em momentos de fé — mesmo com a rotina corrida.
         </p>
 
@@ -43,20 +43,20 @@ const Hero = () => {
         <div className="flex flex-col gap-4 w-full sm:w-auto">
           <a 
             href="#oferta-principal"
-            className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
+            className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-xl text-lg sm:text-xl font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
           >
             QUERO ADQUIRIR AGORA
           </a>          
           <a 
             href="#conteudo-incluso"
-            className="border-2 border-yellow-500 text-yellow-500 px-6 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
+            className="border-2 border-yellow-500 text-yellow-500 px-6 py-4 rounded-xl text-lg sm:text-xl font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full"
           >
             O que vou receber?
           </a>
         </div>
 
         {/* Microconfiança */}
-        <p className="text-sm text-gray-500 font-medium mt-2">
+        <p className="text-base sm:text-lg text-gray-500 font-medium mt-2">
           ✅ Entrega imediata em PDF · ✅ Pagamento seguro via Pix e Cartão
         </p>
       </div>
