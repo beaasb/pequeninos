@@ -19,7 +19,7 @@ const Hero = () => {
         </h1>
 
         {/* Imagem */}
-        <div className="w-full flex justify-center px-4">
+        <div className="w-full flex justify-center px-8">
           <img 
             src="https://i.imgur.com/FTgi443.png" 
             alt="Capa do livro Colorindo com Jesus"
