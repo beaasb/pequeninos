@@ -2,7 +2,7 @@ import { Clock, CheckCircle, BookOpen, HandHeart } from "lucide-react";
 
 export default function FeaturesBook() {
   return (
-    <section className="w-full py-12 bg-gradient-to-r from-indigo-100 to-blue-100 text-gray-700">
+    <section className="w-full py-12 bg-gradient-to-br from-purple-100 to-pink-100 text-gray-700">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Título */}
         <h2 className="text-2xl sm:text-3xl font-bold leading-snug">
