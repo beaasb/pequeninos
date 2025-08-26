@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import SpoilerBook from './components/SpoilerBook';
 import Comparison from './components/Comparison';
@@ -36,7 +35,6 @@ function App() {
 
   return (
     <div className="min-h-screen"> 
-      <Header />
       <Hero />
       <SpoilerBook /> 
       <Comparison/>
