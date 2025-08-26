@@ -39,7 +39,7 @@ export default function FeaturesBook() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-mediun leading-snug">
             Leitura, aprendizado e diversão unidos em um só propósito: aproximar
-            as crianças da Palavra de Deus
+            as crianças da <strong>Palavra de Deus</strong>
           </h2>
         </div>
       </section>
