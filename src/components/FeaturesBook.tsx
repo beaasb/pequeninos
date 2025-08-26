@@ -4,7 +4,7 @@ export default function FeaturesBook() {
   return (
     <> 
       {/* Primeira seção */}
-      <section className="w-full py-8 bg-gradient-to-br from-purple-100 to-pink-100 text-gray-700">
+      <section className="w-full py-6 bg-gradient-to-br from-purple-100 to-pink-100 text-gray-700">
         <div className="max-w-4xl mx-auto px-6 text-center">
           {/* Título */}
           <h2 className="text-2xl sm:text-3xl font-bold leading-snug">
