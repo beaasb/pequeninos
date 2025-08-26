@@ -38,7 +38,7 @@ export default function FeaturesBook() {
       <section className="w-full py-12 bg-gradient-to-br from-purple-100 to-pink-100 text-gray-700">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-xl sm:text-2xl font-mediun leading-snug">
-            Nosso material irá transformar o aprendizado e leitura bíblica do seu filho!
+            Nosso material irá transformar o aprendizado e leitura bíblica do seu filho! {" "}
             <strong>Simples, Prático e Divertido.</strong>
           </h2>
         </div>
