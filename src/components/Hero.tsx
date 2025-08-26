@@ -27,7 +27,7 @@ const Hero = () => {
                 <img 
                   src="https://i.imgur.com/FTgi443.png" 
                   alt="Capa do livro Colorindo com Jesus"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
                 />                   
             </div>
           </div>
