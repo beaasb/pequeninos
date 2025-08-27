@@ -29,7 +29,7 @@ const SpoilerBook = () => {
             <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{title}</h2>
-          <p className="text-xl text-gray-600 mb-3">{subtitle}</p>
+          <p className="text-xl text-gray-600 mb-2">{subtitle}</p>
 
           {/* Mockup do Livro */}
           <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl" style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}>
