@@ -199,18 +199,18 @@ const WhatIncludes = () => {
               href="#oferta-principal"
               className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero Somente o Livro R$ 9,90
+              Quero Somente o Livro R$ 12,90
             </a>
             <a
               href="#oferta-kit"
               className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-4 rounded-xl text-lg font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
             >
-              Quero o Kit Completo R$ 19,90
+              Quero o Kit Completo R$ 24,90
             </a>
           </div>
 
           <p className="text-center text-gray-600 font-medium">
-            Kit completo inclui o livro + 3 bônus exclusivos por R$ 19,90
+            Kit completo inclui o livro + 3 bônus exclusivos por R$ 24,90
           </p>
         </div>
       </section>
@@ -277,10 +277,10 @@ const WhatIncludes = () => {
               href="#oferta-kit"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 h-14 px-8 py-4 text-lg font-bold"
             >
-              Quero o Kit Completo por R$ 19,90
+              Quero o Kit Completo por R$ 24,90
             </a>
             <p className="text-sm text-gray-500 mt-4">
-              ⚡ Oferta limitada - Economia de R$ 46,00
+              ⚡ Oferta limitada - Economia de R$ 71,00
             </p>
           </div>
         </div>
