@@ -198,7 +198,7 @@ const CompleteKit = () => {
             
             <h4 class="text-6xl font-bold mb-2 text-center text-green-600">R$ 24,90</h4>
             <p class="text-center font-semibold text-lg text-gray-500 mb-8">ou 5x de R$ 5,85 no cartão</p>
-            <hr class="bborder-t border-gray-300 mb-4 w-full">
+            <hr class="bborder-t border-gray-300 mb-4 w-full"/>
             
             <div className="text-center">
               <a
