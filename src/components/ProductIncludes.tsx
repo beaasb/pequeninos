@@ -127,7 +127,7 @@ const ProductFeatures = () => {
             </span>
           </h4>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">    
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">    
  
           {bonuses.map((bonus, index) => (
             <div key={index} className="group bg-white p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-105 w-full md:w-80 lg:w-96">
