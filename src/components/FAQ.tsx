@@ -50,7 +50,7 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
                 className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left transition-colors ${
                   openIndex === index
-                    ? "bg-yellow-100 border-l-4 border-yellow-400"
+                    ? "bg-gray-100 border-l-4 border-gray-400"
                     : "bg-white hover:bg-gray-50"
                 }`}
                 aria-expanded={openIndex === index}
