@@ -187,21 +187,22 @@ const CompleteKit = () => {
               <div className="bg-red-500 text-white px-4 py-2 rounded-lg text-center text-sm max-w-xs mx-auto">
                 <p className="font-bold">🔥 Oferta limitada - Kit Completo!</p>
               </div>
+              {/* Imagem de meios de pagamento */}
+  <div className="mt-6 flex justify-center">
+    <img
+      src="https://eubiblia.com/wp-content/uploads/2025/02/icons-meio-de-pagamento-e1738718378460.png"
+      alt="Meios de pagamento"
+      className="max-w-full h-auto"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+</div>
             </div>
           </div>
         </div>
       </div>
-          {/* Imagem de meios de pagamento */}
-      <div className="mt-6 flex justify-center">
-        <img
-          src="https://eubiblia.com/wp-content/uploads/2025/02/icons-meio-de-pagamento-e1738718378460.png"
-          alt="Meios de pagamento"
-          className="max-w-full h-auto"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
-    </div>
+      
     </section>
   );
 };
