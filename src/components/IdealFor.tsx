@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookOpen, HelpCircle, Heart } from 'lucide-react';
 
-const IdealFor = () => {
+const IdealFor = () => { 
   const useCases = [
     {
       icon: <BookOpen className="w-12 h-12 text-red-500" />,
