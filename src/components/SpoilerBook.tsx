@@ -22,6 +22,7 @@ const SpoilerBook = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="max-w-6xl mx-auto relative">
+
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto">
@@ -74,19 +75,19 @@ const SpoilerBook = () => {
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </div>
 
-          {/* Bolinhas */}
-          <div className="swiper-pagination mt-6 flex justify-center"></div>
         </div>
       </div>
 
-      {/* CSS adicional para posicionar as bolinhas */}
+      {/* CSS adicional para a paginação */}
       <style jsx>{`
         .swiper-pagination {
-          bottom: 0 !important;
+          bottom: 10px !important;
+          text-align: center;
         }
         .swiper-pagination-bullet {
           background-color: #888;
           opacity: 1;
+          margin: 0 4px !important;
         }
         .swiper-pagination-bullet-active {
           background-color: #333;
