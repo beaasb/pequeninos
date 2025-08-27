@@ -167,10 +167,10 @@ const CompleteKit = () => {
               </p>
 
               <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">R$ 65,90</span>
-                <span className="text-3xl md:text-4xl font-bold text-white">R$ 19,90</span>
+                <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">R$ 95,90</span>
+                <span className="text-3xl md:text-4xl font-bold text-white">R$ 24,90</span>
               </div>
-              <p className="text-sm text-green-100 mb-6">Economia de R$ 46,00!</p>
+              <p className="text-sm text-green-100 mb-6">Economia de R$ 71,00!</p>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
                 {[
@@ -196,10 +196,7 @@ const CompleteKit = () => {
                 >
                   Quero o Kit Completo
                 </a>
-                <p className="text-sm text-gray-300 mt-2">
-                  Oferta termina em: <span className="font-bold text-red-400">{formatTime(timeLeft)}</span>
-                </p>
-              </div>
+                </div>
 
               <div className="bg-red-500 text-white px-4 py-2 rounded-lg text-center text-sm max-w-xs mx-auto">
                 <p className="font-bold">🔥 Oferta limitada - Kit Completo!</p>
