@@ -159,7 +159,7 @@ const ImageComparison: React.FC<ComparisonProps> = ({
         <div className="mt-10 mb-5">
           <a
             href="#oferta-principal"
-            className="bg-black text-white px-6 py-4 rounded-sm text-sm font-bold hover:bg-green-800 transition" 
+            className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-4 rounded-xl text-lg sm:text-xl font-bold hover:brightness-110 hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2 shadow-lg w-full" 
           >
             QUERO ADQUIRIR AGORA
           </a>
