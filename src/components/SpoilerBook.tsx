@@ -28,7 +28,7 @@ const SpoilerBook = () => {
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6 mx-auto"> 
             <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-5">{title}</h2>
           <p className="text-xl text-gray-600">{subtitle}</p>
 
           {/* Mockup do Livro */}
