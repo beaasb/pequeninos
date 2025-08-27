@@ -160,6 +160,7 @@ const CompleteKit = () => {
               </p>
 
               <div className="flex flex-col items-center justify-center gap-3 mb-2">
+                <p> de </p>
                 <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">
                   R$ 95,90
                 </span>
