@@ -148,6 +148,7 @@ const CompleteKit = () => {
                   na jornada.
                 </span>
               </li>
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
               <li className="flex items-start">
                 <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
                 <span>
