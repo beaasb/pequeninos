@@ -32,7 +32,7 @@ const SpoilerBook = () => {
           <p className="text-xl text-gray-600 mb-6">{subtitle}</p>
 
           {/* Mockup do Livro */}
-          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mb-6" style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}>
+          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mb-9" style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}>
             <img
               src={mockupImg}
               className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1 rounded-xl"
