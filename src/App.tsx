@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import SpoilerBook from './components/SpoilerBook';
 import FeaturesBook from './components/FeaturesBook';
 import Comparison from './components/Comparison';
-import WhatIncludes from './components/WhatIncludes';
+import WhatIncludes from './components/ProductIncludes';
 import IdealFor from './components/IdealFor';
 import CompleteKit from './components/CompleteKit';
 import Testimonials from './components/Testimonials';
