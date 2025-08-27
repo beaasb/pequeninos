@@ -1,90 +1,72 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
+import React, { useState } from "react";
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   const faqs = [
     {
-      question: "Como recebo o livro após a compra?",
-      answer: "Você recebe o link para download diretamente no seu e-mail assim que o pagamento for confirmado. Tudo digital e instantâneo!"
-    },
-    {
-      question: "O livro é físico ou digital?",
-      answer: "É um livro digital em PDF. Você pode imprimir quantas cópias quiser!"
-    },
-    {
-      question: "Para qual faixa etária o livro é indicado?",
-      answer: "Ideal para crianças de 4 a 9 anos, mas pode ser usado com outras idades."
-    },
-    {
-      question: "As ilustrações são prontas para colorir?",
-      answer: "Sim! Todas são em preto e branco com traços grossos, feitas para colorir com facilidade."
+      question: "Qual é a forma de pagamento?",
+      answer: "Você pode fazer o pagamento pelo pix ou cartão de crédito.",
     },
     {
       question: "O pagamento é seguro?",
-      answer: "100% seguro. Usamos plataformas confiáveis e protegidas."
+      answer:
+        "Sim, o pagamento é 100% seguro, utilizamos uma das maiores plataformas de vendas do mundo, a Cakto.",
     },
     {
-      question: "E se eu não gostar do conteúdo?",
-      answer: "Você tem 7 dias de garantia. Se não gostar, devolvemos seu dinheiro sem complicações."
+      question: "Tem garantia?",
+      answer:
+        "Sim, são 7 dias de garantia incondicional. Caso você não goste, devolvemos o seu investimento sem burocracia.",
     },
     {
-      question: "Posso imprimir em casa ou em gráfica?",
-      answer: "Sim! Imprima em casa ou leve o PDF à gráfica."
+      question: "Como vou ter acesso ao Material?",
+      answer:
+        "Assim que o seu pagamento for concluído, enviaremos o link para download diretamente no seu e-mail para você acessar o material e baixar.",
     },
     {
-      question: "Posso usar em sala de aula ou célula?",
-      answer: "Claro! O conteúdo é ideal para professores e líderes usarem com grupos."
-    }
+      question: "Para qual faixa etária o livro é indicado?",
+      answer:
+        "Ideal para crianças de 5 a 9 anos, mas pode ser usado com outras idades.",
+    },
   ];
+
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <HelpCircle className="w-8 h-8 text-blue-500" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Dúvidas Frequentes
-          </h2>
-          <p className="text-xl text-gray-600">
-            Tire todas as suas dúvidas sobre a compra e o livro
-          </p>
-        </div>
-        
-        <div className="space-y-4">
+    <section className="py-16">
+      <div className="max-w-3xl mx-auto">
+        {/* Título */}
+        <h2 className="text-3xl font-bold text-center mb-8">
+          Perguntas Frequentes
+        </h2>
+
+        {/* Accordion */}
+        <div className="border border-gray-300 rounded-lg overflow-hidden">
           {faqs.map((faq, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl shadow-md overflow-hidden"
-            >
+            <div key={index} className="border-b border-gray-300 last:border-b-0">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left transition-colors ${
+                  openIndex === index
+                    ? "bg-yellow-100 border-l-4 border-yellow-400"
+                    : "bg-white hover:bg-gray-50"
+                }`}
+                aria-expanded={openIndex === index}
               >
-                <h3 className="font-bold text-gray-800 text-lg pr-4">
-                  {faq.question}
-                </h3>
-                {openIndex === index ? (
-                  <ChevronUp className="w-6 h-6 text-blue-500 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-6 h-6 text-blue-500 flex-shrink-0" />
-                )}
+                <span>{faq.question}</span>
+                <span className="text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
               </button>
-              
-              {openIndex === index && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
+              <div
+                className={`px-6 overflow-hidden transition-all duration-300 ${
+                  openIndex === index ? "max-h-96 py-4" : "max-h-0"
+                }`}
+              >
+                <p>{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>
