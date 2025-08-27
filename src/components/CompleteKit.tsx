@@ -187,7 +187,6 @@ const CompleteKit = () => {
                   devocionais da família.
                 </span>
               </li>
-              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
             <hr class="border-t border-gray-300 mb-4 w-full"/>
              
             </ul>
