@@ -1,27 +1,27 @@
 import React from 'react';
-import { BookOpen, Users, Heart, Home, GraduationCap, Calendar } from 'lucide-react';
+import { BookOpen, Users, Heart, Home } from 'lucide-react';
 
 const IdealFor = () => {
   const features = [
     {
       icon: <BookOpen className="w-12 h-12 text-red-500" />,
-      title: "Compreensão Profunda dos Salmos",
-      description: "O leitor finalmente entenderá cada versículo dos salmos com explicações claras e práticas, tornando a leitura da Bíblia mais acessível e significativa."
+      title: "Aprendizado Divertido",
+      description: "As crianças aprendem histórias e valores bíblicos enquanto se divertem colorindo páginas temáticas do livro."
     },
     {
       icon: <Users className="w-12 h-12 text-orange-500" />,
-      title: "Resolução de Dúvidas Bíblicas",
-      description: "O leitor terá respostas para os versículos mais desafiadores ou mal interpretados, eliminando frustrações e incertezas em seu estudo da Bíblia."
+      title: "Fácil de Colorir",
+      description: "Atividades simples e cativantes que mantêm a atenção dos pequenos, mesmo com rotinas agitadas."
     },
     {
       icon: <Heart className="w-12 h-12 text-purple-500" />,
-      title: "Aprofundamento Espiritual",
-      description: "Com uma visão mais clara dos salmos, o leitor sentirá um crescimento espiritual, maior proximidade com os ensinamentos de Jesus e renovação de sua fé."
+      title: "Aproximação de Deus",
+      description: "Promove momentos de conexão com a Palavra de Deus, fortalecendo a fé de maneira lúdica e envolvente."
     },
     {
       icon: <Home className="w-12 h-12 text-blue-500" />,
-      title: "Aplicação Prática",
-      description: "O estudo ajudará o leitor a traduzir os ensinamentos bíblicos para ações concretas em sua vida diária, fortalecendo sua fé e seus relacionamentos."
+      title: "Pais e Filhos Juntos",
+      description: "Atividades que incentivam interação familiar, criando momentos de aprendizado e diversão em conjunto."
     }
   ];
 
