@@ -53,6 +53,8 @@ const ProductFeatures = () => {
           <span className="bg-yellow-400 py-3 px-12 rounded inline-block">VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO</span>
         </h2>
 
+        <h4 class="text-xl font-bold mb-4 text-center">✅ TODOS OS BÔNUS INCLUSOS</h4>
+
         {/* Itens principais */}
         {items.map((item, index) => (
           <div
