@@ -107,6 +107,11 @@ const CompleteKit = () => {
               <h2 class="text-xl font-semibold mb-2 text-center text-red-600">
                 <b>ATENÇÃO:</b> Temos uma oferta <span class="underline">ainda mais VANTAJOSA</span> para você! Veja logo abaixo
               </h2>
+
+              <div className="flex flex-col items-center justify-center mb-5 animate-bounce -mt-5">
+                <ChevronDown className="w-20 h-20 text-red-600" />
+                <ChevronDown className="w-20 h-20 text-red-600 -mt-12" />
+              </div>
               
             </div>
           </div>
