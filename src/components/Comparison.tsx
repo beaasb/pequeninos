@@ -4,7 +4,7 @@ interface ComparisonProps {
   beforeImage: string;
   afterImage: string;
   offset?: number;
-  beforeLabel?: string;
+  beforeLabel?: string; 
   afterLabel?: string;
 }
 
