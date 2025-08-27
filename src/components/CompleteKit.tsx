@@ -201,6 +201,10 @@ const CompleteKit = () => {
             <hr class="bborder-t border-gray-300 mb-4 w-full"/>
             
             <div className="text-center">
+
+              <h1 class="text-xl mb-2 text-center text-black mt-5">✅ Você economiza <b>R$71,00</b>
+              </h1>
+              
               <a
                 href="#"
                 onClick={handleKitClick}
