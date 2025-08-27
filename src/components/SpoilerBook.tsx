@@ -42,7 +42,7 @@ const SpoilerBook = () => {
         </div>
 
         {/* Carrossel */}
-        <div className="relative max-w-4xl mx-auto -mt-9">
+        <div className="relative max-w-4xl mx-auto -mt-12">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
