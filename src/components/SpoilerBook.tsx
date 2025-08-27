@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const SpoilerBook = () => {
-  // Dados declarados dentro do componente
   const includes = [
     { image: "https://i.imgur.com/XDZXarY.png", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
     { image: "https://i.imgur.com/dqKEHrA.png", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
@@ -19,8 +18,6 @@ const SpoilerBook = () => {
   const title = "VEJA UM DOS MATERIAIS QUE VOCÊ VAI RECEBER NA PRÁTICA!";
   const subtitle = "Um livro completo para o desenvolvimento espiritual e criativo do seu filho";
   const mockupImg = "https://i.imgur.com/GD6dHoU.png";
-  const offerPrimary = "Quero Somente o Livro R$ 9,90";
-  const offerKit = "Quero o Kit Completo R$ 19,90";
 
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
@@ -31,13 +28,13 @@ const SpoilerBook = () => {
             <BookOpen className="w-4 h-4 mr-2" /> Produto Digital em PDF – Imprima quantas vezes quiser
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">{title}</h2>
-          <p className="text-xl text-gray-600 mb-1">{subtitle}</p>
+          <p className="text-xl text-gray-600 mb-6">{subtitle}</p>
 
           {/* Mockup do Livro */}
-          <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg" style={{ filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,1))' }}>
+          <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl" style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}>
             <img
               src={mockupImg}
-              className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1"
+              className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1 rounded-xl"
               alt="Mockup Livro"
             />
           </div>
@@ -52,13 +49,13 @@ const SpoilerBook = () => {
             speed={500}
             autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
             navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
-            pagination={{ clickable: true, el: ".custom-pagination" }}
+            pagination={{ clickable: true }}
             breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 } }}
             className="elementor-image-carousel"
           >
             {includes.map((item, index) => (
               <SwiperSlide key={index}>
-                <figure className="swiper-slide-inner flex justify-center items-center">
+                <figure className="flex justify-center items-center">
                   <img
                     src={item.image}
                     alt={item.alt}
@@ -69,6 +66,7 @@ const SpoilerBook = () => {
             ))}
           </Swiper>
 
+          {/* Setas */}
           <div className="custom-prev absolute top-1/2 left-2 -translate-y-1/2 z-10 cursor-pointer">
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </div>
@@ -76,9 +74,24 @@ const SpoilerBook = () => {
             <ChevronRight className="w-6 h-6 text-gray-700" />
           </div>
 
-          <div className="custom-pagination mt-6 flex justify-center"></div>
+          {/* Bolinhas */}
+          <div className="swiper-pagination mt-6 flex justify-center"></div>
         </div>
       </div>
+
+      {/* CSS adicional para posicionar as bolinhas */}
+      <style jsx>{`
+        .swiper-pagination {
+          bottom: 0 !important;
+        }
+        .swiper-pagination-bullet {
+          background-color: #888;
+          opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #333;
+        }
+      `}</style>
     </section>
   );
 };
