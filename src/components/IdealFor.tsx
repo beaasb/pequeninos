@@ -1,27 +1,27 @@
 import React from 'react';
-import { BookOpen, HelpCircle, Heart } from 'lucide-react';
+import { BookOpen, Heart, Users } from 'lucide-react';
 
-const IdealFor = () => { 
+const IdealFor = () => {
   const useCases = [
     {
       icon: <BookOpen className="w-12 h-12 text-red-500" />,
       title: "Compreensão Profunda dos Salmos",
-      description: "O leitor finalmente entenderá cada versículo com explicações claras e práticas, tornando a leitura mais acessível e significativa."
+      description: "O leitor entenderá cada versículo com explicações claras e práticas."
     },
     {
-      icon: <HelpCircle className="w-12 h-12 text-orange-500" />,
+      icon: <Users className="w-12 h-12 text-orange-500" />,
       title: "Resolução de Dúvidas Bíblicas",
-      description: "Respostas para versículos desafiadores ou mal interpretados, eliminando frustrações e incertezas no estudo da Bíblia."
+      description: "Respostas para versículos desafiadores, eliminando incertezas no estudo."
     },
     {
       icon: <Heart className="w-12 h-12 text-purple-500" />,
       title: "Aprofundamento Espiritual",
-      description: "Com uma visão mais clara dos salmos, o leitor sentirá crescimento espiritual, proximidade com os ensinamentos de Jesus e renovação da fé."
+      description: "Crescimento espiritual e proximidade com os ensinamentos de Jesus."
     },
     {
       icon: <BookOpen className="w-12 h-12 text-blue-500" />,
       title: "Aplicação Prática",
-      description: "O estudo ajudará a traduzir ensinamentos bíblicos em ações concretas no dia a dia, fortalecendo fé e relacionamentos."
+      description: "Traduz ensinamentos bíblicos em ações concretas no dia a dia."
     }
   ];
 
@@ -55,7 +55,6 @@ const IdealFor = () => {
           ))}
         </div>
 
-        {/* Botão CTA */}
         <div className="text-center mt-12">
           <a
             href="#SALMOS"
