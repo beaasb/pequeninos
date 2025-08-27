@@ -116,8 +116,9 @@ const CompleteKit = () => {
           </div>
 
           {/* Plano Completo */}
-          <div className="flex-1 bg-white text-black rounded-2xl shadow-xl p-6 md:p-8 order-2 md:order-2">
-            <h3 className="text-2xl font-bold mb-4 text-center">Plano Completo</h3>
+          <h3 class="text-5xl font-bold mb-4 text-center">
+            <span class="bg-yellow-400 py-3 px-12 rounded block w-full md:max-w-3xl mx-auto text-center">Plano Completo</span>
+          </h3>
             <img
               src="https://eubiblia.com/wp-content/uploads/2025/01/150-salmos-4-min.png"
               alt="Plano Completo"
