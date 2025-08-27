@@ -205,8 +205,8 @@ const CompleteKit = () => {
                 <p className="font-bold">🔥 Oferta limitada - Kit Completo!</p>
               </div>
 
-              {/* Imagem de meios de pagamento */}
-              <div className="mt-6 flex justify-center">
+               {/* Imagem de meios de pagamento */}
+              {/*<div className="mt-6 flex justify-center">
                 <img
                   src=""
                   alt="Meios de pagamento"
@@ -214,7 +214,7 @@ const CompleteKit = () => {
                   loading="lazy"
                   decoding="async"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
