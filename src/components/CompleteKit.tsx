@@ -188,7 +188,7 @@ const CompleteKit = () => {
                 </span>
               </li>
               <hr className="border-t border-gray-300 w-5/6 mx-auto" />
-            
+            <hr class="border-t border-gray-300 mb-4 w-full"/>
              
             </ul>
             <h4 className="text-xl font-bold mb-2 text-center">R$ 27,90</h4>
