@@ -189,7 +189,9 @@ const CompleteKit = () => {
               </div>
               
             </div>
-            {/* Imagem de meios de pagamento */}
+            
+          </div>
+          {/* Imagem de meios de pagamento */}
   <div className="mt-6 flex justify-center">
     <img
       src="https://eubiblia.com/wp-content/uploads/2025/02/icons-meio-de-pagamento-e1738718378460.png"
@@ -200,7 +202,6 @@ const CompleteKit = () => {
     />
   </div>
 </div>
-          </div>
         </div>
       </div>
       
