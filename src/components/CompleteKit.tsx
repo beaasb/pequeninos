@@ -212,6 +212,11 @@ const CompleteKit = () => {
               >
                 QUERO O PLANO COMPLETO
               </a>
+
+              <h1 class="text-1xl mb-2 text-center text-black mt-5 mb-5">
+                <b>APROVEITE AGORA:</b> 
+                Você não vai encontrar esse preço depois!
+              </h1>
             </div>
           </div>
 
