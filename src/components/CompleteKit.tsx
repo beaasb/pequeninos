@@ -130,8 +130,61 @@ const CompleteKit = () => {
             <hr class="border-t border-gray-300 mb-4 w-full"/>
             
             <ul className="mb-4 space-y-4">
-              <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> Todos Materiais na Versão PDF (Receba Imediato)</li>
-              <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> 150 Salmos + 31 Provérbios + Evangelhos + 200 Versículos Explicados</li>
+              {/* Livro principal */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Livro Digital “Colorindo com Jesus”</b> — 20 páginas para colorir com versículos,
+                  ilustrações divertidas e atividades que unem fé e criatividade.
+                </span>
+              </li>
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Planner */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Planner Devocional Infantil</b> — 31 dias de devocionais, espaço para anotações e
+                  organização espiritual da criança.
+                </span>
+              </li>
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Desafios bíblicos */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Desafios Bíblicos</b> — jogos, quiz e atividades criativas para fixar os versículos
+                  de forma divertida.
+                </span>
+              </li>
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Devocional pais */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Devocional para os Pais</b> — reflexões rápidas e práticas para guiar os momentos
+                  devocionais da família.
+                </span>
+              </li>
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Extras */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Checklist de Progresso</b> — acompanhe cada página concluída e motive seu filho
+                  na jornada.
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Certificado de Conclusão</b> — uma forma especial de celebrar a dedicação e o
+                  aprendizado.
+                </span>
+              </li>
             </ul>
             <h4 className="text-xl font-bold mb-2 text-center">R$ 27,90</h4>
             <p className="text-center text-gray-700 mb-4">ou 6x de R$5,18 no cartão</p>
