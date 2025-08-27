@@ -63,7 +63,7 @@ const CompleteKit = () => {
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Chevrons no topo */}
-        <div className="flex flex-col items-center justify-center mb-12 animate-bounce -mt-5">
+        <div className="flex flex-col items-center justify-center mb-8 animate-bounce -mt-5">
           <ChevronDown className="w-20 h-20 text-white" />
           <ChevronDown className="w-20 h-20 text-white -mt-12" />
         </div>
