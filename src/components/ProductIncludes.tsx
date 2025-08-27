@@ -50,7 +50,7 @@ const ProductFeatures = () => {
     <section className="py-16 px-4 bg-gradient-to-br from-indigo-50 to-blue-50">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-3xl font-bold text-black mb-12">
-          <span className="bg-yellow-400 py-4 px-12 rounded block w-full md:max-w-3xl mx-auto text-center">VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO</span>
+          <span className="bg-yellow-400 py-3 px-12 rounded block w-full md:max-w-3xl mx-auto text-center">VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO</span>
         </h2>
 
         {/* Itens principais */}
