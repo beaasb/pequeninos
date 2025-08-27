@@ -33,7 +33,7 @@ function App() {
         currency: 'BRL'
       });
     }
-  }, []);
+  }, []); 
 
   return (
     <div className="min-h-screen"> 
