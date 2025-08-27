@@ -19,41 +19,41 @@ const CompleteKit = () => {
   };
 
   const handleLivroClick = () => {
-    if (typeof window !== 'undefined' && window.fbq) {
-      const eventId = 'ic_' + Date.now() + '_' + Math.floor(Math.random() * 100000);
-      window.fbq('track', 'InitiateCheckout', {
-        content_name: 'Colorindo com Jesus - Livro',
-        content_ids: ['SKU_COLORINDO_001'],
-        value: 9.90,
-        currency: 'BRL',
-        event_id: eventId
+    if (typeof window !== "undefined" && window.fbq) {
+      const eventId = "ic_" + Date.now() + "_" + Math.floor(Math.random() * 100000);
+      window.fbq("track", "InitiateCheckout", {
+        content_name: "Colorindo com Jesus - Livro",
+        content_ids: ["SKU_COLORINDO_001"],
+        value: 9.9,
+        currency: "BRL",
+        event_id: eventId,
       });
-      localStorage.setItem('lastInitiateCheckoutEventId', eventId);
-      window.fbq('track', 'AddToCart', {
-        content_name: 'Colorindo com Jesus - Livro',
-        content_ids: ['SKU_COLORINDO_001'],
-        value: 9.90,
-        currency: 'BRL'
+      localStorage.setItem("lastInitiateCheckoutEventId", eventId);
+      window.fbq("track", "AddToCart", {
+        content_name: "Colorindo com Jesus - Livro",
+        content_ids: ["SKU_COLORINDO_001"],
+        value: 9.9,
+        currency: "BRL",
       });
     }
   };
 
   const handleKitClick = () => {
-    if (typeof window !== 'undefined' && window.fbq) {
-      const eventId = 'ic_' + Date.now() + '_' + Math.floor(Math.random() * 100000);
-      window.fbq('track', 'InitiateCheckout', {
-        content_name: 'Kit Completo - Colorindo com Jesus',
-        content_ids: ['SKU_KIT_001'],
-        value: 19.90,
-        currency: 'BRL',
-        event_id: eventId
+    if (typeof window !== "undefined" && window.fbq) {
+      const eventId = "ic_" + Date.now() + "_" + Math.floor(Math.random() * 100000);
+      window.fbq("track", "InitiateCheckout", {
+        content_name: "Kit Completo - Colorindo com Jesus",
+        content_ids: ["SKU_KIT_001"],
+        value: 19.9,
+        currency: "BRL",
+        event_id: eventId,
       });
-      localStorage.setItem('lastInitiateCheckoutEventId', eventId);
-      window.fbq('track', 'AddToCart', {
-        content_name: 'Kit Completo - Colorindo com Jesus',
-        content_ids: ['SKU_KIT_001'],
-        value: 19.90,
-        currency: 'BRL'
+      localStorage.setItem("lastInitiateCheckoutEventId", eventId);
+      window.fbq("track", "AddToCart", {
+        content_name: "Kit Completo - Colorindo com Jesus",
+        content_ids: ["SKU_KIT_001"],
+        value: 19.9,
+        currency: "BRL",
       });
     }
   };
@@ -85,7 +85,10 @@ const CompleteKit = () => {
         {/* Ofertas */}
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Livro */}
-          <div id="oferta-principal" className="bg-white rounded-2xl p-6 md:p-8 text-card-foreground shadow-xl relative overflow-hidden">
+          <div
+            id="oferta-principal"
+            className="bg-white rounded-2xl p-6 md:p-8 text-card-foreground shadow-xl relative overflow-hidden"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-orange-100 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="absolute bottom-0 left-0 w-20 h-20 bg-indigo-100 rounded-full translate-y-10 -translate-x-10"></div>
 
@@ -100,15 +103,18 @@ const CompleteKit = () => {
                   <span className="text-2xl md:text-3xl font-bold text-muted-foreground line-through">
                     R$ 27,90
                   </span>
-                  <span className="text-3xl md:text-4xl font-bold text-amber-600">
-                    R$ 9,90
-                  </span>
+                  <span className="text-3xl md:text-4xl font-bold text-amber-600">R$ 9,90</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Economia de R$ 18,00</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
-                {["Livro com 20 páginas de versículos e desenhos mais atividades", "Certificado incluso", "Imprima quantas vezes quiser", "Para todas as idades"].map((item) => (
+                {[
+                  "Livro com 20 páginas de versículos e desenhos mais atividades",
+                  "Certificado incluso",
+                  "Imprima quantas vezes quiser",
+                  "Para todas as idades",
+                ].map((item) => (
                   <div key={item} className="flex items-center">
                     <Check className="w-5 h-5 mr-2 flex-shrink-0 text-orange-500" />
                     <span className="text-sm">{item}</span>
@@ -127,7 +133,8 @@ const CompleteKit = () => {
                   Quero o Livro
                 </a>
                 <p className="text-sm text-gray-600 mt-2">
-                  Oferta termina em: <span className="font-bold text-red-600">{formatTime(timeLeft)}</span>
+                  Oferta termina em:{" "}
+                  <span className="font-bold text-red-600">{formatTime(timeLeft)}</span>
                 </p>
               </div>
 
@@ -143,7 +150,10 @@ const CompleteKit = () => {
           </div>
 
           {/* Kit Completo */}
-          <div id="oferta-kit" className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
+          <div
+            id="oferta-kit"
+            className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-12 translate-x-12"></div>
             <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-10 -translate-x-10"></div>
 
@@ -152,7 +162,9 @@ const CompleteKit = () => {
                 <Gift className="w-3 h-3 mr-1" /> KIT COMPLETO - 4 PRODUTOS
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">OFERTA ESPECIAL</h3>
-              <p className="text-green-100 mb-6">Produto Principal (livro Colorindo com Jesus) + 3 Bônus Exclusivos</p>
+              <p className="text-green-100 mb-6">
+                Produto Principal (livro Colorindo com Jesus) + 3 Bônus Exclusivos
+              </p>
 
               <div className="flex items-center justify-center gap-3 mb-2">
                 <span className="text-2xl md:text-3xl font-bold text-green-200 line-through">R$ 65,90</span>
@@ -161,7 +173,12 @@ const CompleteKit = () => {
               <p className="text-sm text-green-100 mb-6">Economia de R$ 46,00!</p>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
-                {["Livro Colorindo com Jesus + Bônus Inclusos no livro acima", "Planner Devocional Infantil (com mais de 100 páginas)", "Livro de Desafios Biblicos (várias atividades para seu filho aprender e se divertir)", "Devocional para os Pais (devocioal de 7 dias para ajudar na readaptação do seu filho longe das telas)"].map((item) => (
+                {[
+                  "Livro Colorindo com Jesus + Bônus Inclusos no livro acima",
+                  "Planner Devocional Infantil (com mais de 100 páginas)",
+                  "Livro de Desafios Biblicos (várias atividades para seu filho aprender e se divertir)",
+                  "Devocional para os Pais (devocioal de 7 dias para ajudar na readaptação do seu filho longe das telas)",
+                ].map((item) => (
                   <div key={item} className="flex items-center text-green-300">
                     <Check className="w-5 h-5 mr-2 flex-shrink-0" />
                     <span className="text-sm">{item}</span>
@@ -187,28 +204,23 @@ const CompleteKit = () => {
               <div className="bg-red-500 text-white px-4 py-2 rounded-lg text-center text-sm max-w-xs mx-auto">
                 <p className="font-bold">🔥 Oferta limitada - Kit Completo!</p>
               </div>
-              
+
+              {/* Imagem de meios de pagamento */}
+              <div className="mt-6 flex justify-center">
+                <img
+                  src="https://eubiblia.com/wp-content/uploads/2025/02/icons-meio-de-pagamento-e1738718378460.png"
+                  alt="Meios de pagamento"
+                  className="max-w-full h-auto"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
-            
           </div>
-          
         </div>
-        {/* Imagem de meios de pagamento */}
-  <div className="mt-6 flex justify-center">
-    <img
-      src="https://eubiblia.com/wp-content/uploads/2025/02/icons-meio-de-pagamento-e1738718378460.png"
-      alt="Meios de pagamento"
-      className="max-w-full h-auto"
-      loading="lazy"
-      decoding="async"
-    />
-  </div>
-</div>
       </div>
-      
     </section>
   );
 };
 
 export default CompleteKit;
-
