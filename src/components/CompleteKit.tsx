@@ -63,6 +63,11 @@ const CompleteKit = () => {
       id="oferta"
       className="py-20 bg-gradient-to-r from-orange-400 to-indigo-300 text-primary-foreground offer-section"
     >
+      {/* ChevronDown antes das ofertas */}
+        <div className="flex flex-col items-center justify-center my-8 animate-bounce">
+          <ChevronDown className="w-20 h-20 text-white" />
+          <ChevronDown className="w-20 h-20 text-white -mt-12" />
+        </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho */}
         <div className="text-center mb-12">
@@ -82,11 +87,7 @@ const CompleteKit = () => {
           </p>
         </div>
 
-        {/* ChevronDown antes das ofertas */}
-        <div className="flex flex-col items-center justify-center my-8 animate-bounce">
-          <ChevronDown className="w-20 h-20 text-red-600" />
-          <ChevronDown className="w-20 h-20 text-red-600 -mt-12" />
-        </div>
+        
 
         {/* Ofertas */}
         <div className="max-w-4xl mx-auto space-y-12">
