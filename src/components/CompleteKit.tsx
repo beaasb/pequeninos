@@ -206,9 +206,9 @@ const CompleteKit = () => {
               </h1>
               
               <a
-                href="#"
+                href="https://pay.cakto.com.br/ugodz3a_513354"
                 onClick={handleKitClick}
-                className="inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition"
+                className="inline-block bg-green-600 text-white font-bold px-10 py-5 rounded-xl text-lg rounded-md hover:bg-green-700 transition mb-8 mt-8"
               >
                 QUERO O PLANO COMPLETO
               </a>
