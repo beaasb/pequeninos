@@ -127,10 +127,10 @@ const ProductFeatures = () => {
             </span>
           </h4>
 
-        <div className="mb-16 flex flex-col md:flex-row items-center justify-center gap-5 relative">
-
+        <div className="mb-16 flex flex-col md:flex-row items-center justify-center gap-5 relative">    
+ 
           {bonuses.map((bonus, index) => (
-            <div key={index} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            <div key={index} className="group bg-white p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-105 w-full md:w-80 lg:w-96">
               <img src={bonus.image} alt={bonus.title} className="mx-auto mb-4 rounded-xl" />
               <h3 className="text-xl font-bold text-gray-800 mb-5 bg-yellow-400">{bonus.title}</h3>
               <h4 className="text-2xl font-bold text-black mb-3 font-serif">{bonus.subtitle}</h4>
