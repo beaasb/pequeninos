@@ -187,9 +187,15 @@ const CompleteKit = () => {
                   devocionais da família.
                 </span>
               </li>
-            <hr class="border-t border-gray-300 mb-4 w-full"/>
-             
+            <hr class="border-t border-gray-300 mb-4 w-full"/>             
             </ul>
+
+            <h3 class="text-xl font-bold mb-2 text-center text-black">
+              <span class="text-black"> de </span>
+              <span class="line-through decoration-gray-500 text-red-500">R$ 95,90</span>
+              <span class="text-black"> por</span>
+            </h3>
+            
             <h4 className="text-xl font-bold mb-2 text-center">R$ 27,90</h4>
             <p className="text-center text-gray-700 mb-4">ou 6x de R$5,18 no cartão</p>
             <div className="text-center">
