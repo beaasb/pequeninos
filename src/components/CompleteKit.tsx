@@ -126,6 +126,7 @@ const CompleteKit = () => {
               className="w-full h-auto mb-4 rounded-xl"
             />
             <h4 class="text-xl font-bold mb-4 text-center">Todos Materiais na Versão PDF (Receba Imediato)</h4>
+            <hr class="border-t border-gray-300 mb-4 w-full">
             <ul className="mb-4 space-y-2">
               <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> Todos Materiais na Versão PDF (Receba Imediato)</li>
               <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> 150 Salmos + 31 Provérbios + Evangelhos + 200 Versículos Explicados</li>
