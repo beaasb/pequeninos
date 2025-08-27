@@ -218,14 +218,14 @@ const CompleteKit = () => {
                 Você não vai encontrar esse preço depois!
               </h1>
               <div class="mt-3 flex justify-center">
-              <img 
-                loading="lazy" 
-                decoding="async" 
-                width="459" 
-                height="57" 
-                src="https://i.imgur.com/iDMIGos.png" 
-                alt="Meios de pagamento" 
-                class="w-full max-w-xs h-10 object-cover">
+                <img 
+                  loading="lazy" 
+                  decoding="async" 
+                  width="459" 
+                  height="57" 
+                  src="https://i.imgur.com/iDMIGos.png" 
+                  alt="Meios de pagamento" 
+                  class="w-full max-w-xs h-10 object-cover">
                 </div>              
             </div>
           </div>
