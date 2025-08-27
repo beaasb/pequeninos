@@ -89,7 +89,7 @@ const CompleteKit = () => {
               alt="Plano Básico"
               className="w-full h-auto mb-4 rounded-xl"
             /> 
-            
+            {/* Divisor */} <hr className="border-t border-gray-300 mb-4 w-25 mx-auto md:mx-0" />
             <ul className="mb-4 space-y-2"> 
               
               <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> 150 Salmos Explicado Versículo por Versículo (em PDF)</li>
