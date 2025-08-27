@@ -196,7 +196,7 @@ const CompleteKit = () => {
               <span class="text-black"> por</span>
             </h3>
             
-            <h4 className="text-xl font-bold mb-2 text-center">R$ 27,90</h4>
+            <h4 class="text-6xl font-bold mb-2 text-center text-green-600">R$ 24,90</h4>
             <p className="text-center text-gray-700 mb-4">ou 6x de R$5,18 no cartão</p>
             <div className="text-center">
               <a
