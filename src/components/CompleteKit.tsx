@@ -102,6 +102,7 @@ const CompleteKit = () => {
                 <div className="flex items-center justify-center gap-3 mb-2">
                   <span className="text-3xl md:text-4xl font-bold text-amber-600">R$ 12,90</span>
                 </div>
+                <p className="text-sm text-muted-foreground">ou 2x de R$7,22 no cartão</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-3 mb-6 text-left max-w-md mx-auto">
