@@ -104,6 +104,11 @@ const CompleteKit = () => {
               >               
                 QUERO SOMENTE O BÁSICO
               </a>
+
+              <h2 class="text-xl font-semibold mb-2 text-center text-red-600">
+                <b>ATENÇÃO:</b> Temos uma oferta <span class="underline">ainda mais VANTAJOSA</span> para você! Veja logo abaixo
+              </h2>
+              
             </div>
           </div>
 
