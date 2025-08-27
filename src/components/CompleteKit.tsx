@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Gift, Star, Check, Shield, Clock, BookOpen } from "lucide-react";
+import { Gift, Star, Check, Shield, Clock, BookOpen, ChevronDown } from "lucide-react";
 
 const CompleteKit = () => {
   const [timeLeft, setTimeLeft] = useState(24 * 3600);
@@ -82,6 +82,12 @@ const CompleteKit = () => {
           </p>
         </div>
 
+        {/* ChevronDown antes das ofertas */}
+        <div className="flex flex-col items-center justify-center my-8 animate-bounce">
+          <ChevronDown className="w-20 h-20 text-red-600" />
+          <ChevronDown className="w-20 h-20 text-red-600 -mt-12" />
+        </div>
+
         {/* Ofertas */}
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Livro */}
@@ -128,7 +134,7 @@ const CompleteKit = () => {
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 h-14 px-8 py-4 text-lg font-bold"
                 >
                   Quero o Livro
-                </a>                
+                </a>
               </div>
 
               <div className="flex justify-center items-center gap-4 pt-4 border-t border-border">
@@ -196,22 +202,22 @@ const CompleteKit = () => {
                 >
                   Quero o Kit Completo
                 </a>
-                </div>
+              </div>
 
               <div className="bg-red-500 text-white px-4 py-2 rounded-lg text-center text-sm max-w-xs mx-auto">
                 <p className="font-bold">🔥 Oferta limitada - Kit Completo!</p>
               </div>
 
-               {/* Imagem de meios de pagamento */}
-              {/*<div className="mt-6 flex justify-center">
+              {/* Imagem de meios de pagamento */}
+              <div className="mt-3 flex justify-center">
                 <img
-                  src=""
+                  src="https://i.imgur.com/jVZGSxr.png"
                   alt="Meios de pagamento"
                   className="max-w-full h-auto"
                   loading="lazy"
                   decoding="async"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
