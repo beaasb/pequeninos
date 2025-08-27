@@ -54,7 +54,7 @@ const IdealFor = () => {
         {/* Botão CTA */}
         <div className="text-center mt-12">
           <a
-            href="#oferta-principal"
+            href="#plano-basico"
             className="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold px-8 py-4 rounded-xl text-lg hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg"
           >
             QUERO ADQUIRIR AGORA
