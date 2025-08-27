@@ -94,7 +94,7 @@ const CompleteKit = () => {
               
               <li className="flex items-center"><Check className="w-5 h-5 mr-2 text-green-500" /> Livro Pequeninos - Colorindo com Jesus (em PDF)</li>
             </ul>
-            <h4 className="text-xl font-bold mb-2 text-center">R$ 12,90</h4>
+            <h4 className="text-6xl font-bold mb-2 text-center">R$ 12,90</h4>
             <p className="text-center text-gray-700 mb-4">ou 3x de R$6,52 no cartão</p>
             <div className="text-center">
               <a
