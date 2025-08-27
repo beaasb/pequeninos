@@ -121,7 +121,7 @@ const CompleteKit = () => {
             </h3>
             <h4 class="text-xl font-bold mb-4 text-center">✅ TODOS OS BÔNUS INCLUSOS</h4>
             <img
-              src="https://eubiblia.com/wp-content/uploads/2025/01/150-salmos-4-min.png"
+              src="https://i.imgur.com/DONTeQ5.png"
               alt="Plano Completo"
               className="w-full h-auto mb-4 rounded-xl"
             />
