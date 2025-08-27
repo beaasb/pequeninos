@@ -225,7 +225,7 @@ const CompleteKit = () => {
                   height="57" 
                   src="https://i.imgur.com/iDMIGos.png" 
                   alt="Meios de pagamento" 
-                  class="w-full max-w-xs h-10 object-cover">
+                  class="w-full max-w-xs h-10 object-cover"/>
                 </div>              
             </div>
           </div>
