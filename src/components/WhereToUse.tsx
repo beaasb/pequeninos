@@ -1,37 +1,27 @@
 import React from 'react';
-import { Church, Users, Home, GraduationCap, Calendar, User } from 'lucide-react';
+import { BookOpen, HelpCircle, Heart } from 'lucide-react';
 
-const WhereToUse = () => {
+const IdealFor = () => {
   const useCases = [
     {
-      icon: <Church className="w-12 h-12 text-blue-500" />,
-      title: "Escola Dominical",
-      description: "Perfeito para aulas bíblicas infantis"
+      icon: <BookOpen className="w-12 h-12 text-red-500" />,
+      title: "Compreensão Profunda dos Salmos",
+      description: "O leitor finalmente entenderá cada versículo com explicações claras e práticas, tornando a leitura mais acessível e significativa."
     },
     {
-      icon: <Home className="w-12 h-12 text-green-500" />,
-      title: "Devocional em Família",
-      description: "Momentos especiais com os filhos"
+      icon: <HelpCircle className="w-12 h-12 text-orange-500" />,
+      title: "Resolução de Dúvidas Bíblicas",
+      description: "Respostas para versículos desafiadores ou mal interpretados, eliminando frustrações e incertezas no estudo da Bíblia."
     },
     {
-      icon: <Users className="w-12 h-12 text-purple-500" />,
-      title: "Grupos de Célula",
-      description: "Atividades para célula infantil"
+      icon: <Heart className="w-12 h-12 text-purple-500" />,
+      title: "Aprofundamento Espiritual",
+      description: "Com uma visão mais clara dos salmos, o leitor sentirá crescimento espiritual, proximidade com os ensinamentos de Jesus e renovação da fé."
     },
     {
-      icon: <GraduationCap className="w-12 h-12 text-orange-500" />,
-      title: "Aulas Cristãs",
-      description: "Material didático para professores"
-    },
-    {
-      icon: <Calendar className="w-12 h-12 text-pink-500" />,
-      title: "Eventos Infantis",
-      description: "Atividades para festas da igreja"
-    },
-    {
-      icon: <User className="w-12 h-12 text-indigo-500" />,
-      title: "Atividades Individuais",
-      description: "Momentos pessoais de fé"
+      icon: <BookOpen className="w-12 h-12 text-blue-500" />,
+      title: "Aplicação Prática",
+      description: "O estudo ajudará a traduzir ensinamentos bíblicos em ações concretas no dia a dia, fortalecendo fé e relacionamentos."
     }
   ];
 
@@ -40,18 +30,15 @@ const WhereToUse = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Onde Usar o Livro?
+            <span className="text-red-500 font-extrabold">IDEAL PARA VOCÊ QUE DESEJA:</span>
           </h2>
-          <p className="text-xl text-gray-600">
-            Versátil para diversos momentos de aprendizado cristão
-          </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {useCases.map((useCase, index) => (
             <div 
-              key={index}
-              className="group bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105"
+              key={index} 
+              className="group bg-gradient-to-br from-gray-50 to-red-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 p-3 bg-white rounded-full shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
@@ -67,10 +54,19 @@ const WhereToUse = () => {
             </div>
           ))}
         </div>
+
+        {/* Botão CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="#SALMOS"
+            className="inline-block bg-red-500 text-white font-bold px-8 py-4 rounded-xl text-lg hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg"
+          >
+            QUERO ADQUIRIR O MEU
+          </a>
+        </div>
       </div>
     </section>
   );
 };
 
-export default WhereToUse;
- 
+export default IdealFor;
