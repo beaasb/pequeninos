@@ -80,7 +80,9 @@ const CompleteKit = () => {
         <div className="flex flex-col md:flex-row gap-6">
 
           {/* Plano Básico */}
-          <div className="flex-1 bg-white text-black rounded-2xl shadow-xl p-6 md:p-8 order-1 md:order-1">
+          <div
+            id="plano-basico"
+            className="flex-1 bg-white text-black rounded-2xl shadow-xl p-6 md:p-8 order-1 md:order-1">
             <h3 className="text-2xl font-bold mb-4 text-center">Plano Básico</h3>
             <img
               src="https://eubiblia.com/wp-content/uploads/2025/01/150-salmos-16-min.png"
