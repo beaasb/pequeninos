@@ -52,7 +52,7 @@ const SpoilerBook = () => {
             navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
             pagination={{ clickable: true }}
             breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 } }}
-            className="elementor-image-carousel"
+            className="elementor-image-carousel pb-12"
           >
             {includes.map((item, index) => (
               <SwiperSlide key={index}>
