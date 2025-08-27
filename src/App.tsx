@@ -41,9 +41,9 @@ function App() {
       <Comparison/>                  
       <IdealFor />
       <ProductIncludes />
-      <Testimonials />
       <CompleteKit />
-      <FAQ />
+      <FAQ />      
+      <Testimonials />
       
       {/* Novo componente Footer */}
       <Footer />
