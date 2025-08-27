@@ -95,7 +95,7 @@ const CompleteKit = () => {
               <li className="flex items-center text-xl mb-10"><Check className="w-8 h-8 mr-2 text-green-500" /> Livro Pequeninos - Colorindo com Jesus (em PDF)</li>
             </ul>
             <h4 className="text-6xl font-bold mb-2 text-center text-green-600">R$ 12,90</h4>
-            <p className="text-center font-semibold text-lg text-gray-500 mb-10">ou 2x de R$7,22 no cartão</p>
+            <p className="text-center font-semibold text-lg text-gray-500 mb-15">ou 2x de R$7,22 no cartão</p>
             <div className="text-center">
               <a
                 href="https://pay.cakto.com.br/37vfpfn_513204"
