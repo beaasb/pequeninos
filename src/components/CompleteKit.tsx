@@ -64,7 +64,7 @@ const CompleteKit = () => {
       className="py-20 bg-gradient-to-r from-orange-400 to-indigo-300 text-primary-foreground offer-section"
     >
       {/* ChevronDown antes das ofertas */}
-        <div className="flex flex-col items-center justify-center my-8 animate-bounce -mt-8">
+        <div className="flex flex-col items-center justify-center my-8 animate-bounce -mt-5">
           <ChevronDown className="w-20 h-20 text-white" />
           <ChevronDown className="w-20 h-20 text-white -mt-12" />
         </div>
