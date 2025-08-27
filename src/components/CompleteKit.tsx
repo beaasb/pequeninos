@@ -98,10 +98,10 @@ const CompleteKit = () => {
             <p className="text-center font-semibold text-lg text-gray-500 mb-8">ou 2x de R$7,22 no cartão</p>
             <div className="text-center">
               <a
-                href="#"
+                href="https://pay.cakto.com.br/37vfpfn_513204"
                 onClick={handleLivroClick}
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
-              >
+                className="nline-block bg-green-600 text-white font-bold px-10 py-5 rounded-xl text-lg rounded-md hover:bg-green-700 transition mb-8"
+              >               
                 QUERO SOMENTE O BÁSICO
               </a>
             </div>
