@@ -131,11 +131,7 @@ const CompleteKit = () => {
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 h-14 px-8 py-4 text-lg font-bold"
                 >
                   Quero o Livro
-                </a>
-                <p className="text-sm text-gray-600 mt-2">
-                  Oferta termina em:{" "}
-                  <span className="font-bold text-red-600">{formatTime(timeLeft)}</span>
-                </p>
+                </a>                
               </div>
 
               <div className="flex justify-center items-center gap-4 pt-4 border-t border-border">
