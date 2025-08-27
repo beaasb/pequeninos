@@ -139,7 +139,25 @@ const CompleteKit = () => {
                 </span>
               </li>
               <hr className="border-t border-gray-300 w-5/6 mx-auto" />
-            
+
+               {/* Extras */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Checklist de Progresso</b> — acompanhe cada página concluída e motive seu filho
+                  na jornada.
+                </span>
+              </li>
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Certificado de Conclusão</b> — uma forma especial de celebrar a dedicação e o
+                  aprendizado.
+                </span>
+              </li>
+
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+              
               {/* Planner */}
               <li className="flex items-start">
                 <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
@@ -170,21 +188,7 @@ const CompleteKit = () => {
               </li>
               <hr className="border-t border-gray-300 w-5/6 mx-auto" />
             
-              {/* Extras */}
-              <li className="flex items-start">
-                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
-                <span>
-                  <b>Checklist de Progresso</b> — acompanhe cada página concluída e motive seu filho
-                  na jornada.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
-                <span>
-                  <b>Certificado de Conclusão</b> — uma forma especial de celebrar a dedicação e o
-                  aprendizado.
-                </span>
-              </li>
+             
             </ul>
             <h4 className="text-xl font-bold mb-2 text-center">R$ 27,90</h4>
             <p className="text-center text-gray-700 mb-4">ou 6x de R$5,18 no cartão</p>
