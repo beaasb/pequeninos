@@ -39,9 +39,9 @@ function App() {
       <Hero />
       <SpoilerBook />
       <FeaturesBook />
-      <Comparison/>
-      <WhatIncludes />            
+      <Comparison/>                  
       <IdealFor />
+      <WhatIncludes />
       <Testimonials />
       <CompleteKit />
       <FAQ />
