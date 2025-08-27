@@ -115,12 +115,7 @@ const Testimonials = () => {
           <p className="text-xl text-gray-700 mb-6">
             <span className="font-bold text-green-800">Junte-se a essas famílias satisfeitas!</span> Veja como o livro está transformando momentos especiais
           </p>
-          <a
-            href="#oferta-principal"
-            className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-10 py-5 rounded-full font-bold text-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
-          >
-            Quero o Livro Agora
-          </a>
+          
         </div>
       </div>
     </section>
