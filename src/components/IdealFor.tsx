@@ -57,7 +57,7 @@ const IdealFor = () => {
             href="#SALMOS"
             className="inline-block bg-red-500 text-white font-bold px-8 py-4 rounded-xl text-lg hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg"
           >
-            QUERO ADQUIRIR O MEU
+            QUERO ADQUIRIR AGORA
           </a>
         </div>
       </div>
