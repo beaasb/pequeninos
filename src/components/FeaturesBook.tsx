@@ -19,7 +19,7 @@ export default function FeaturesBook() {
               ⏰ Aprendizado Rápido
             </div>
 
-            <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/50 text-gray-700 text-base font-medium backdrop-blur-sm shadow-sm">
+            <div className="inline-flex items-center justify-center px-4 py-4 rounded-full bg-white/50 text-gray-700 text-base font-medium backdrop-blur-sm shadow-sm">
               ✅ Fácil de colorir
             </div>
 
@@ -27,7 +27,7 @@ export default function FeaturesBook() {
               📖 100% Fiel à Bíblia
             </div>
 
-            <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/50 text-gray-700 text-base font-medium backdrop-blur-sm shadow-sm">
+            <div className="inline-flex items-center justify-center px-4 py-4 rounded-full bg-white/50 text-gray-700 text-base font-medium backdrop-blur-sm shadow-sm">
               🙏🏻 Proximidade de Deus
             </div>
           </div>
