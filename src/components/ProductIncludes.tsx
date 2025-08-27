@@ -77,11 +77,9 @@ const ProductFeatures = () => {
     }
   ];
 
-  return (
+  return ( 
     <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-yellow-50">
-      <h2 class="text-3xl md:text-3xl font-bold text-black mb-12">
-        <span class="bg-yellow-400 px-12 py-3 rounded">VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO</span><
-      </h2>
+      <h2 class="text-3xl md:text-3xl font-bold text-black mb-12"><span class="bg-yellow-400 px-12 py-3 rounded">VOCÊ VAI RECEBER AO ADQUIRIR SEU PRODUTO</span></h2>
 
         {/* Itens principais */}
         {items.map((item, index) => (
