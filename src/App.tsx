@@ -44,8 +44,7 @@ function App() {
       <Testimonials />
       <CompleteKit />
       <FAQ />
-      <Guarantee />
-
+      
       {/* Novo componente Footer */}
       <Footer />
 
