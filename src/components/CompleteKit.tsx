@@ -65,7 +65,7 @@ const CompleteKit = () => {
         {/* Chevrons no topo */}
         <div className="flex flex-col items-center justify-center mb-12 animate-bounce -mt-5">
           <ChevronDown className="w-20 h-20 text-white" />
-          <ChevronDown className="w-20 h-20 text-white -mt-6" />
+          <ChevronDown className="w-20 h-20 text-white -mt-12" />
         </div>
 
         {/* Título */}
