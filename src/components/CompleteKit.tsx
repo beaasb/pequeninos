@@ -100,7 +100,7 @@ const CompleteKit = () => {
               <a
                 href="https://pay.cakto.com.br/37vfpfn_513204"
                 onClick={handleLivroClick}
-                className="nline-block bg-green-600 text-white font-bold px-10 py-5 rounded-xl text-lg rounded-md hover:bg-green-700 transition mb-8"
+                className="nline-block bg-green-600 text-white font-bold px-10 py-5 rounded-xl text-lg rounded-md hover:bg-green-700 transition mb-8" 
               >               
                 QUERO SOMENTE O BÁSICO
               </a>
