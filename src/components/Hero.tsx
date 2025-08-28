@@ -21,7 +21,7 @@ const Hero = () => {
         {/* Imagem */}
         <div className="w-full flex justify-center px-4">
           <img 
-            src="https://i.imgur.com/L4zF5sA.png" 
+            src="/images/8ulITpE - Imgur.webp" 
             alt="Capa do livro Colorindo com Jesus"
             className="mx-auto w-full max-w1x1"
             style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}
