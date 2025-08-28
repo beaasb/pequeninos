@@ -17,7 +17,7 @@ const SpoilerBook = () => {
 
   const title = "VEJA UM DOS MATERIAIS QUE VOCÊ VAI RECEBER NA PRÁTICA!";
   const subtitle = "Um livro completo para o desenvolvimento espiritual e criativo do seu filho";
-  const mockupImg = "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/GD6dHoU.webp?token=GHSAT0AAAAAADJFZD7BGAQQQDHWOB4MOMA22FQXUCA";
+  const mockupImg = "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/GD6dHoU.webp";
 
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
