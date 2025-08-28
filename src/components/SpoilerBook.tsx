@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 const SpoilerBook = () => {
   const includes = [
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/XDZXarY.webp?token=GHSAT0AAAAAADJFZD7BWX7Z3VH34MZC5MDG2FQXR2A", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
-    { image: "images/dqKEHrA%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
+    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/dqKEHrA.webp?token=GHSAT0AAAAAADJFZD7BYUL5GCBCTHJD7W2G2FQXSGQ", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
     { image: "images/mNUXXJo%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
     { image: "images/D4SoMyJ%20-%20Imgur.webp", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
     { image: "https://github.com/beaasb/pequeninos/raw/refs/heads/main/images/8ulITpE%20-%20Imgur.webp", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
