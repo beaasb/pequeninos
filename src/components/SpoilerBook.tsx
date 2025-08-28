@@ -8,16 +8,16 @@ import "swiper/css/pagination";
 
 const SpoilerBook = () => {
   const includes = [
-    { image: "/images/XDZXarY - Imgur.webp", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
-    { image: "/images/dqKEHrA - Imgur.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
-    { image: "/images/mNUXXJo - Imgur.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
-    { image: "/images/D4SoMyJ - Imgur.webp", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
-    { image: "/images/8ulITpE - Imgur.webp", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
+    { image: "/images/XDZXarY%20-%20Imgur.webp", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
+    { image: "/images/dqKEHrA%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
+    { image: "/images/mNUXXJo%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
+    { image: "/images/D4SoMyJ%20-%20Imgur.webp", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
+    { image: "/images/8ulITpE%20-%20Imgur.webp", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
   ];
 
   const title = "VEJA UM DOS MATERIAIS QUE VOCÊ VAI RECEBER NA PRÁTICA!";
   const subtitle = "Um livro completo para o desenvolvimento espiritual e criativo do seu filho";
-  const mockupImg = "/images/GD6dHoU - Imgur.webp";
+  const mockupImg = "/images/GD6dHoU%20-%20Imgur.webp";
 
   return (
     <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
