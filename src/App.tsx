@@ -27,7 +27,7 @@ function App() {
         content_name: 'Livro Colorindo com Jesus',
         content_ids: ['SKU_LIVRO_001'],
         content_type: 'product',
-        value: 9.90,
+        value: 12.90,
         currency: 'BRL'
       });
     }

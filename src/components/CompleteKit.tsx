@@ -78,6 +78,7 @@ const CompleteKit = () => {
             <img
               src="https://i.imgur.com/iKu3fMM.png"
               alt="Plano Básico"
+              loading="lazy"
               className="w-full h-auto mb-4 rounded-xl"
             /> 
             <hr className="border-t border-gray-300 mb-4 w-25 mx-auto md:mx-0" />
@@ -114,6 +115,7 @@ const CompleteKit = () => {
             <img
               src="https://i.imgur.com/DONTeQ5.png"
               alt="Plano Completo"
+              loading="lazy"
               className="w-full h-auto mb-4 rounded-xl"
             />
             <h4 class="text-xl font-bold mb-4 text-center">Todos Materiais na Versão PDF (Receba Imediato)</h4>

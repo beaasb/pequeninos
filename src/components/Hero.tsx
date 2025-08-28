@@ -22,7 +22,8 @@ const Hero = () => {
         <div className="w-full flex justify-center px-4">
           <img 
             src="/images/L4zF5sA - Imgur.webp" 
-            alt="Capa do livro Colorindo com Jesus"
+            alt="Plano Completo - Colorindo com Jesus"
+            loading="lazy"
             className="mx-auto w-full max-w1x1"
             style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}
           />
