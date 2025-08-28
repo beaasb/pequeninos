@@ -58,7 +58,7 @@ const Hero = () => {
 
         {/* Microconfiança */}
         <p className="text-base sm:text-lg text-gray-500 font-medium mt-2">
-          ✅ Entrega imediata em PDF · ✅ Pagamento seguro via Pix e Cartão
+          ✅ Entrega imediata em PDF · ✅ Pagamento seguro via Pix e Cartão na Cakto
         </p>
       </div>
     </section>
