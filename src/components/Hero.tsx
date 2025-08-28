@@ -32,6 +32,7 @@ const Hero = () => {
 
         <p className="text-lg sm:text-2xl md:text-2xl text-gray-700 leading-relaxed">
           Você já tentou ensinar a Bíblia para as crianças e percebeu que, em poucos minutos, elas se distraem e perdem o interesse?
+        </p>
         <p className="text-lg sm:text-2xl md:text-2xl text-gray-700 leading-relaxed">
           Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:{" "}
           o livro da <strong>Pequeninos - Colorindo com Jesus</strong>, em PDF com entrega imediata para você imprimir quantas vezes quiser.{" "}
