@@ -20,7 +20,7 @@ const Hero = () => {
 
         {/* Imagem */}
         <div className="w-full flex justify-center px-4">
-          <img                         src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/L4zF5sA.webp?token=GHSAT0AAAAAADJFZD7BVQJ6NYZWPN7AIBLC2FQXVXQ" 
+          <img                         src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/L4zF5sA.webp" 
             alt="Plano Completo - Colorindo com Jesus"
             loading="lazy"
             className="mx-auto w-full max-w1x1"
