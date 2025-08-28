@@ -10,7 +10,7 @@ const SpoilerBook = () => {
   const includes = [
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/XDZXarY.webp", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/dqKEHrA.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
-    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/mNUXXJo.webp?token=GHSAT0AAAAAADJFZD7ASPBA6CNMPLFXHY222FQXSWA", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
+    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/mNUXXJo.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/D4SoMyJ.webp?token=GHSAT0AAAAAADJFZD7BZD5IIJAP7YBEDIMM2FQXTLQ", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/8ulITpE.webp?token=GHSAT0AAAAAADJFZD7AGVJ7E7PUQGL5MT7S2FQXTYQ", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
   ];
