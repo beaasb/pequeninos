@@ -28,14 +28,9 @@ const CompleteKit = () => {
         currency: "BRL",
         event_id: eventId,
       });
-      localStorage.setItem("lastInitiateCheckoutEventId", eventId);
-      window.fbq("track", "AddToCart", {
-        content_name: "Colorindo com Jesus - Livro",
-        content_ids: ["SKU_COLORINDO_001"],
-        value: 12.9,
-        currency: "BRL",
-      });
+      localStorage.setItem("lastInitiateCheckoutEventId", eventId); // só se a Cakto usar
     }
+    window.location.href = "https://pay.cakto.com.br/37vfpfn_513204";
   };
 
   const handleKitClick = () => {
@@ -48,15 +43,11 @@ const CompleteKit = () => {
         currency: "BRL",
         event_id: eventId,
       });
-      localStorage.setItem("lastInitiateCheckoutEventId", eventId);
-      window.fbq("track", "AddToCart", {
-        content_name: "Kit Completo - Colorindo com Jesus",
-        content_ids: ["SKU_KIT_001"],
-        value: 24.9,
-        currency: "BRL",
-      });
+      localStorage.setItem("lastInitiateCheckoutEventId", eventId); // só se a Cakto usar
     }
+    window.location.href = "https://pay.cakto.com.br/ugodz3a_513354";
   };
+
 
   return (
     <section className="py-20 bg-gradient-to-r from-orange-400 to-indigo-300 text-white">
@@ -225,7 +216,7 @@ const CompleteKit = () => {
                   height="57" 
                   src="https://i.imgur.com/iDMIGos.png" 
                   alt="Meios de pagamento" 
-                  class="w-full max-w-xs h-10 object-cover"/>
+                  class="w-full max-w-xs h-11 object-cover"/>
                 </div>              
             </div>
           </div>
