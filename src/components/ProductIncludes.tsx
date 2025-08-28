@@ -27,7 +27,7 @@ const ProductFeatures: React.FC = () => {
       title: "ITEM 01",
       subtitle: "Livro Colorindo com Jesus",
       description: "Imagens + Versículos = Diversão com Deus",
-      image: "/images/w4Qx60t%20-%20Imgur.webp", // ✅ sem espaços
+      image: "images/w4Qx60t%20-%20Imgur.webp", // ✅ sem espaços
       loading: "lazy",
       details: [
         "20 Páginas para Colorir com Versículos Bíblicos Selecionados;",
