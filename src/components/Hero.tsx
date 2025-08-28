@@ -35,7 +35,7 @@ const Hero = () => {
           <span style={{ color: "green", fontWeight: "bold" }}>Por apenas R$ 12,90</span>
         </p>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-1xl text-gray-700 leading-relaxed">
           Enquanto atividades comuns cansam rápido, o <strong>Colorindo com Jesus</strong> foi criado
     para manter as crianças envolvidas <em>do começo ao fim</em> — unindo diversão e Palavra de Deus.
         </p>
