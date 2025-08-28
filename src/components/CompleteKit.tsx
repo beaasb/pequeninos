@@ -213,7 +213,7 @@ const CompleteKit = () => {
                   loading="lazy" 
                   decoding="async" 
                   width="500" 
-                  height="57" 
+                  height="60" 
                   src="https://i.imgur.com/iDMIGos.png" 
                   alt="Meios de pagamento" 
                   class="w-full max-w-xs h-12 object-cover"/>
