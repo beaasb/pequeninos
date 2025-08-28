@@ -36,7 +36,8 @@ const Hero = () => {
         </p>
 
         <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed">
-          Atividades rápidas, criativas e cheias de significado que unem pais e filhos em momentos de fé — mesmo com a rotina corrida.
+          Enquanto atividades comuns cansam rápido, o <strong>Colorindo com Jesus</strong> foi criado
+    para manter as crianças envolvidas <em>do começo ao fim</em> — unindo diversão e Palavra de Deus.
         </p>
 
         {/* CTAs */}
