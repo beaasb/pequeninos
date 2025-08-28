@@ -9,8 +9,8 @@ interface ComparisonProps {
 }
 
 const ImageComparison: React.FC<ComparisonProps> = ({
-  beforeImage = "https://i.imgur.com/hZWyzuR.png",
-  afterImage = "https://i.imgur.com/dqKEHrA.png",
+  beforeImage = "/images/hZWyzuR - Imgur.webp",
+  afterImage = "images/dqKEHrA - Imgur.webp",
   offset = 0.5,
   beforeLabel = "Antes",
   afterLabel = "Depois",
