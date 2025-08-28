@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const SpoilerBook = () => {
   const includes = [
-    { image: "images/XDZXarY%20-%20Imgur.webp", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
+    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/XDZXarY.webp?token=GHSAT0AAAAAADJFZD7BWX7Z3VH34MZC5MDG2FQXR2A", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
     { image: "images/dqKEHrA%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
     { image: "images/mNUXXJo%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
     { image: "images/D4SoMyJ%20-%20Imgur.webp", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
