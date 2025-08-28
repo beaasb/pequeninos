@@ -214,7 +214,7 @@ const CompleteKit = () => {
                   decoding="async" 
                   width="500" 
                   height="60" 
-                  src="https://i.imgur.com/iDMIGos.png" 
+                  src="https://i.imgur.com/HPOIsLA.png" 
                   alt="Meios de pagamento" 
                   class="w-full max-w-xs h-14 object-cover"/>
                 </div>              
