@@ -7,7 +7,7 @@ const ProductFeatures = () => {
       title: "ITEM 01",
       subtitle: "Livro Colorindo com Jesus",
       description: "Imagens + Versículos = Diversão com Deus",
-      image: "https://i.imgur.com/w4Qx60t.png",
+      image: "/images/w4Qx60t - Imgur.webp",
       details: [
         "20 Páginas para Colorir com Versículos Bíblicos Selecionados;",
         "Textos Curtos e Fáceis de Entender para Crianças;",
