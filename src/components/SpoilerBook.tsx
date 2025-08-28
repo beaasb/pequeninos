@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const SpoilerBook = () => {
   const includes = [
-    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/XDZXarY.webp?token=GHSAT0AAAAAADJFZD7BWX7Z3VH34MZC5MDG2FQXR2A", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
+    { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/XDZXarY.webp", alt: "Checklist de Progresso", title: "Checklist de Progresso" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/dqKEHrA.webp?token=GHSAT0AAAAAADJFZD7BYUL5GCBCTHJD7W2G2FQXSGQ", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/mNUXXJo.webp?token=GHSAT0AAAAAADJFZD7ASPBA6CNMPLFXHY222FQXSWA", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
     { image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/D4SoMyJ.webp?token=GHSAT0AAAAAADJFZD7BZD5IIJAP7YBEDIMM2FQXTLQ", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
