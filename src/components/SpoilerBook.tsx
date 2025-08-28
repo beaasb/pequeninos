@@ -12,7 +12,7 @@ const SpoilerBook = () => {
     { image: "images/dqKEHrA%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "2 Sessões Temáticas" },
     { image: "images/mNUXXJo%20-%20Imgur.webp", alt: "Sessões Temáticas", title: "3 Sessões Temáticas" },
     { image: "images/D4SoMyJ%20-%20Imgur.webp", alt: "Atividades Criativas", title: "6 Atividades Criativas" },
-    { image: "/mages/8ulITpE%20-%20Imgur.webp", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
+    { image: "https://github.com/beaasb/pequeninos/raw/refs/heads/main/images/8ulITpE%20-%20Imgur.webp", alt: "Certificado de Conclusão", title: "Certificado de Conclusão" },
   ];
 
   const title = "VEJA UM DOS MATERIAIS QUE VOCÊ VAI RECEBER NA PRÁTICA!";
