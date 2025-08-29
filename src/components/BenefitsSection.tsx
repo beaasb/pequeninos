@@ -34,7 +34,7 @@ const BenefitsSection = () => {
         </div>
 
         {/* Lista de benefícios */}
-        <div className="space-y-5 text-left">
+        <div className="space-y-5 text-center">
           {benefits.map((benefit, index) => (
             <div
               key={index}
