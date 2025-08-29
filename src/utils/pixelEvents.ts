@@ -60,3 +60,26 @@ export const testPixel = () => {
     return false;
   }
 };
+
+// Função para capturar e salvar o fbclid da URL em cookie
+const storeFbcFromUrl = () => {
+  if (typeof window === 'undefined') return;
+
+  const params = new URLSearchParams(window.location.search);
+  const fbclid = params.get('fbclid');
+
+  if (fbclid) {
+    const fbc = `fb.1.${Date.now()}.${fbclid}`;
+    document.cookie = `_fbc=${fbc}; path=/; max-age=7776000`; // 90 dias
+  }
+};
+
+// Função para recuperar o fbc salvo
+const getFbc = (): string | null => {
+  if (typeof document === 'undefined') return null;
+  const match = document.cookie.match(/(?:^|; )_fbc=([^;]*)/);
+  return match ? match[1] : null;
+};
+
+// Executa ao carregar o site para salvar fbclid caso exista
+storeFbcFromUrl();
