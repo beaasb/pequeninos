@@ -10,7 +10,7 @@ interface ComparisonProps {
 
 const ImageComparison: React.FC<ComparisonProps> = ({
   beforeImage = "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/pretoebranco.webp", 
-  afterImage = "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/dqKEHrA.webp",
+  afterImage = "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/colorida.webp",
   loading="lazy",
   offset = 0.5,
   beforeLabel = "Antes",
