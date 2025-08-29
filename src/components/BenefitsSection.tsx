@@ -40,7 +40,7 @@ const BenefitsSection = () => {
               key={index}
               className="flex items-center gap-3 bg-gray-50 p-5 rounded-2xl shadow-sm max-w-2xl mx-auto"
             >
-              <Check className="text-green-600 w-7 h-7 flex-shrink-0" />
+              <Check className="text-green-600 w-8 h-8 flex-shrink-0" />
               <p className="text-gray-800 text-lg md:text-xl leading-snug">
                 {benefit}
               </p>
