@@ -14,8 +14,8 @@ const Hero = () => {
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
-          Transforme distração em aprendizado <br /> 
-          com diversão e fé!
+          Seu Devocional Infantil pronto em  <br /> 
+          <b>10 minutos!</b>
         </h1>
 
         {/* Imagem */}
