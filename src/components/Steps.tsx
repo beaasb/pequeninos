@@ -25,7 +25,7 @@ const StepsSection = () => {
               </div>
 
               {index < steps.length - 1 && (
-                <ChevronDown className="w-10 h-10 text-indigo-600 animate-bounce" />
+                <ChevronDown className="w-24 h-24 text-indigo-600 animate-bounce" />
               )}
             </React.Fragment>
           ))}
