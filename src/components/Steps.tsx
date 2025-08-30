@@ -1,7 +1,7 @@
 import React from "react";
 import { PlayCircle } from "lucide-react";
 
-const StepsSection = () => {
+const Steps = () => {
   const steps = [
     "Baixe o material no mesmo instante.",
     "Abra o Guia Rápido “Devocional em 5 Passos”.",
@@ -35,4 +35,4 @@ const StepsSection = () => {
   );
 };
 
-export default StepsSection;
+export default Steps;
