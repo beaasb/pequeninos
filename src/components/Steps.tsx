@@ -16,7 +16,7 @@ const StepsSection = () => {
         </h2>
         <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-1">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center gap-4 bg-white p-5 rounded-2xl shadow-md">
+            <div key={index} className="flex flex-col items-center gap-4 bg-gray-50 p-5 rounded-2xl shadow-md">
               <img src={step.img} alt={`Passo ${index + 1}`} className="w-16 h-16 object-contain" />
               <p className="text-center font-bold text-gray-800">{step.text}</p>
             </div>
