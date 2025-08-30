@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="min-h-screen"> 
       <Hero />
-      <Benefit />
+      <Benefits />
       <Steps />
       <SpoilerBook />
       <FeaturesBook />
