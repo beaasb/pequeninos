@@ -30,7 +30,6 @@ const BenefitsSection = () => {
 
         {/* Imagem logo abaixo do título */}
         <div className="w-full h-64 md:h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-inner mb-10">
-          <span className="text-gray-400">[Imagem do produto aqui]</span>
         </div>
 
         {/* Lista de benefícios */}
