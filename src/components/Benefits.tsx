@@ -29,7 +29,7 @@ const Benefits = () => {
         </h2>
 
         {/* Imagem logo abaixo do título */}
-        <div className="w-full h-64 md:h-80 bg-gray-200 rounded-2xl flex items-center justify-center shadow-inner mb-10">
+        <div className="w-full h-64 md:h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-inner mb-10">
         </div>
 
         {/* Lista de benefícios */}
@@ -37,7 +37,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 bg-gray-50 p-5 rounded-2xl shadow-sm max-w-2xl mx-auto"
+              className="flex items-center gap-3 bg-gray-100 p-5 rounded-2xl shadow-sm max-w-2xl mx-auto"
             >
               <Check className="text-green-600 w-7 h-7 flex-shrink-0" />
               <p className="text-gray-800 text-lg md:text-xl leading-snug">
