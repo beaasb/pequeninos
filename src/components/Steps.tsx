@@ -1,17 +1,11 @@
 import React from "react";
 
-// Aqui você pode importar suas imagens ou usar URLs
-import Step1Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
-import Step2Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
-import Step3Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
-import Step4Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
-
 const StepsSection = () => {
   const steps = [
-    { text: "Baixe o material no mesmo instante.", img: Step1Img },
-    { text: "Abra o Guia Rápido “Devocional em 5 Passos”.", img: Step2Img },
-    { text: "Escolha um versículo + atividade já sugerida.", img: Step3Img },
-    { text: "Em 10 minutos, seu devocional em família está feito.", img: Step4Img },
+    { text: "Baixe o material no mesmo instante.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
+    { text: "Abra o Guia Rápido “Devocional em 5 Passos”.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
+    { text: "Escolha um versículo + atividade já sugerida.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
+    { text: "Em 10 minutos, seu devocional em família está feito.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
   ];
 
   return (
