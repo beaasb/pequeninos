@@ -29,13 +29,11 @@ const Benefits = () => {
         </h2>
 
         {/* Imagem logo abaixo do título */}
-        <div className="mx-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl" style={{ filter: 'drop-shadow(0px 8px 12px rgba(0,0,0,0.3))' }}>
             <img
               src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp"
               className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1 rounded-xl"
               alt="Mockup Livro"
             />
-          </div>
 
         {/* Lista de benefícios */}
         <div className="space-y-5 text-left">
