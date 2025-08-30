@@ -5,7 +5,7 @@ const StepsSection = () => {
     { text: "Baixe o material no mesmo instante.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
     { text: "Abra o Guia Rápido “Devocional em 5 Passos”.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/2.webp" },
     { text: "Escolha um versículo + atividade já sugerida.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/3.webp" },
-    { text: "Em 10 minutos, seu devocional em família está feito.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp" },
+    { text: "Em 10 minutos, seu devocional em família está feito.", img: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/4.webp" },
   ];
 
   return (
