@@ -1,28 +1,30 @@
 import React from "react";
-import { PlayCircle } from "lucide-react";
 
-const Steps = () => {
+// Aqui você pode importar suas imagens ou usar URLs
+import Step1Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
+import Step2Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
+import Step3Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
+import Step4Img from "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/1.webp";
+
+const StepsSection = () => {
   const steps = [
-    "Baixe o material no mesmo instante.",
-    "Abra o Guia Rápido “Devocional em 5 Passos”.",
-    "Escolha um versículo + atividade já sugerida.",
-    "Em 10 minutos, seu devocional em família está feito.",
+    { text: "Baixe o material no mesmo instante.", img: Step1Img },
+    { text: "Abra o Guia Rápido “Devocional em 5 Passos”.", img: Step2Img },
+    { text: "Escolha um versículo + atividade já sugerida.", img: Step3Img },
+    { text: "Em 10 minutos, seu devocional em família está feito.", img: Step4Img },
   ];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-gray-50 py-16 px-6 md:px-12">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
           Veja como é simples aplicar hoje mesmo
         </h2>
-        <div className="grid gap-6 md:grid-cols-1">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-3 bg-white p-5 rounded-2xl shadow-md"
-            >
-              <PlayCircle className="text-indigo-600 w-6 h-6 flex-shrink-0" />
-              <p className="text-left text-gray-800">{step}</p>
+            <div key={index} className="flex flex-col items-center gap-4 bg-white p-5 rounded-2xl shadow-md">
+              <img src={step.img} alt={`Passo ${index + 1}`} className="w-16 h-16 object-contain" />
+              <p className="text-center font-bold text-gray-800">{step.text}</p>
             </div>
           ))}
         </div>
@@ -35,4 +37,4 @@ const Steps = () => {
   );
 };
 
-export default Steps;
+export default StepsSection;
