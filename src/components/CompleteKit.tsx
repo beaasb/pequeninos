@@ -180,6 +180,36 @@ const CompleteKit = () => {
                   devocionais da família.
                 </span>
               </li>
+
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Mini-Livro */}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Mini-Livro de Orações Infantil</b> — Orações prontas, simples e curtas!
+                </span>
+              </li>
+
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Guia Prático*/}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Guia Prático: Devocional Hoje em 5 Passos</b> — Ajuda pais a conduzirem o kit devocional de forma simples e rápida.
+                </span>
+              </li>
+
+              <hr className="border-t border-gray-300 w-5/6 mx-auto" />
+            
+              {/* Roteiro Pronto*/}
+              <li className="flex items-start">
+                <Check className="w-6 h-6 mr-3 text-green-500 flex-shrink-0" />
+                <span>
+                  <b>Roteiro Pronto: 7 Dias em Família</b> — Checklist para organizar a semana com o Kit Devocional junto do Guia.
+                </span>
+              </li>
             <hr class="border-t border-gray-300 mb-4 w-full"/>             
             </ul>
 
