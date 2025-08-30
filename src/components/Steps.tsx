@@ -15,7 +15,7 @@ const Steps = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Veja como é simples aplicar hoje mesmo
         </h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-1">
           {steps.map((step, index) => (
             <div
               key={index}
