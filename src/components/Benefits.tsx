@@ -22,7 +22,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-gray-50 py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Por que esse material é diferente de <span className="font-bold">TUDO</span> que você já tentou?
