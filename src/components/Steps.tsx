@@ -1,4 +1,5 @@
 import React from "react";
+import { ChevronDown } from "lucide-react";
 
 const StepsSection = () => {
   const steps = [
@@ -14,12 +15,19 @@ const StepsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
           Veja como é simples aplicar hoje mesmo
         </h2>
-        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-1">
+
+        <div className="flex flex-col items-center gap-6">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center gap-4 bg-white p-5 rounded-2xl shadow-md">
-              <img src={step.img} alt={`Passo ${index + 1}`} className="w-64 h-64 object-contain" />
-              <p className="text-2xl md:text-xl text-center font-bold text-gray-800">{step.text}</p>
-            </div>
+            <React.Fragment key={index}>
+              <div className="flex flex-col items-center gap-4 bg-white p-5 rounded-2xl shadow-md w-full md:w-3/4">
+                <img src={step.img} alt={`Passo ${index + 1}`} className="w-64 h-64 object-contain" />
+                <p className="text-2xl md:text-xl text-center font-bold text-gray-800">{step.text}</p>
+              </div>
+
+              {index < steps.length - 1 && (
+                <ChevronDown className="w-10 h-10 text-indigo-600 animate-bounce" />
+              )}
+            </React.Fragment>
           ))}
         </div>
 
