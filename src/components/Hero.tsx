@@ -30,8 +30,7 @@ const Hero = () => {
 
         {/* Subhead */}
         <p className="text-lg sm:text-2xl md:text-3xl text-gray-700 leading-relaxed">
-          Agora existe um jeito simples e divertido de aproximar os pequenos da Palavra de Deus:{" "}
-          o livro da <strong>Pequeninos - Colorindo com Jesus</strong>, em PDF com entrega imediata para você imprimir quantas vezes quiser.<br />
+          Mesmo que você nunca tenha conseguido manter uma rotina devocional em família, agora está tudo pronto: <b>VERSÍCULOS, ATIVIDADES e PASSO A PASSO</b> simples para começar hoje com seus filhos.
           <span style={{ color: "green", fontWeight: "bold" }}>Por apenas R$ 12,90</span>
         </p>
 
