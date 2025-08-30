@@ -37,7 +37,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 bg-gray-100 p-5 rounded-2xl shadow-lg max-w-2xl mx-auto"
+              className="flex items-center gap-3 bg-gray-100 p-5 rounded-2xl shadow-xl max-w-2xl mx-auto"
             >
               <Check className="text-green-600 w-7 h-7 flex-shrink-0" />
               <p className="text-gray-800 text-lg md:text-xl leading-snug">
