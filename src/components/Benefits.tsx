@@ -1,7 +1,7 @@
 import React from "react";
 import { Check } from "lucide-react";
 
-const BenefitsSection = () => {
+const Benefits = () => {
   const benefits = [
     <>
       <span className="font-bold">Devocional em família pronto hoje</span> <br/>
@@ -52,4 +52,4 @@ const BenefitsSection = () => {
   );
 };
 
-export default BenefitsSection;
+export default Benefits;
