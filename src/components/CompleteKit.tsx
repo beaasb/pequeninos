@@ -113,7 +113,7 @@ const CompleteKit = () => {
             </h3>
             <h4 class="text-xl font-bold mb-4 text-center">✅ TODOS OS BÔNUS INCLUSOS</h4>
             <img
-              src="https://i.imgur.com/DONTeQ5.png"
+              src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/principal.webp"
               alt="Plano Completo"
               loading="lazy"
               className="w-full h-auto mb-4 rounded-xl"
