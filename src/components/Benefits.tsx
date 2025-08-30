@@ -31,7 +31,7 @@ const Benefits = () => {
         {/* Imagem logo abaixo do título */}
             <img
               src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp"
-              className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1 rounded-xl"
+              className="w-full transition-transform duration-500 hover:scale-105 hover:rotate-1 rounded-xl mb-5"
               alt="Mockup Livro"
             />
 
