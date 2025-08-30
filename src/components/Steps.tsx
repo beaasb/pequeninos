@@ -9,7 +9,7 @@ const StepsSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-blue-50 py-16 px-6 md:px-12">
       <div className="max-w-5xl mx-auto text-center"> 
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
           Veja como é simples aplicar hoje mesmo
