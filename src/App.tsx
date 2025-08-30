@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
-import BenefitsSection from './components/BenefitsSection';
+import Benefits from './components/Benefits';
+import Steps from './components/Steps';
 import SpoilerBook from './components/SpoilerBook';
 import FeaturesBook from './components/FeaturesBook';
 import Comparison from './components/Comparison';
@@ -36,7 +37,8 @@ function App() {
   return (
     <div className="min-h-screen"> 
       <Hero />
-      <BenefitsSection />
+      <Benefit />
+      <Steps />
       <SpoilerBook />
       <FeaturesBook />
       <Comparison/>      
