@@ -67,7 +67,31 @@ const ProductFeatures: React.FC = () => {
       image: "https://i.imgur.com/RdXtDBx.png",
       loading: "lazy",
       details: "Reflexões práticas e rápidas para inspirar os pais no dia a dia com Deus."
-    }    
+    },    
+    {
+      title: "#4 - BÔNUS HOJE!",
+      subtitle: "Mini-Livro de Orações Infantil",
+      description: "Conversando com Deus todos os dias",
+      image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/bonus4.webp",
+      loading: "lazy",
+      details: "Orações prontas, simples e curtas, para usar no devocional ou em qualquer momento do dia, reforçando a conexão da criança com Deus."
+    },
+    {
+      title: "#3 - BÔNUS HOJE!",
+      subtitle: "Devocional para os Pais",
+      description: "Fortaleça sua Fé em Família",
+      image: "https://i.imgur.com/RdXtDBx.png",
+      loading: "lazy",
+      details: "Reflexões práticas e rápidas para inspirar os pais no dia a dia com Deus."
+    },
+    {
+      title: "#3 - BÔNUS HOJE!",
+      subtitle: "Devocional para os Pais",
+      description: "Fortaleça sua Fé em Família",
+      image: "https://i.imgur.com/RdXtDBx.png",
+      loading: "lazy",
+      details: "Reflexões práticas e rápidas para inspirar os pais no dia a dia com Deus."
+    }
   ];
 
   return (
@@ -154,7 +178,7 @@ const ProductFeatures: React.FC = () => {
 
         <h4 className="text-3xl md:text-3xl font-bold text-black mb-12">
           <span className="bg-yellow-400 py-3 px-12 rounded block w-full md:max-w-3xl mx-auto text-center">
-            3 Bônus Exclusivos
+            6 Bônus Exclusivos
           </span>
         </h4>
 
