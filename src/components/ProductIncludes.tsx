@@ -77,20 +77,20 @@ const ProductFeatures: React.FC = () => {
       details: "Orações prontas, simples e curtas, para usar no devocional ou em qualquer momento do dia, reforçando a conexão da criança com Deus."
     },
     {
-      title: "#3 - BÔNUS HOJE!",
-      subtitle: "Devocional para os Pais",
-      description: "Fortaleça sua Fé em Família",
-      image: "https://i.imgur.com/RdXtDBx.png",
+      title: "#5 - BÔNUS HOJE!",
+      subtitle: "Guia Prático: Devocional Hoje em 5 Passos,
+      description: "Guia para o Kit Devocional",
+      image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/bonus5.webp",
       loading: "lazy",
-      details: "Reflexões práticas e rápidas para inspirar os pais no dia a dia com Deus."
+      details: "Ajuda pais a conduzirem o kit devocional de forma simples e rápida"
     },
     {
-      title: "#3 - BÔNUS HOJE!",
-      subtitle: "Devocional para os Pais",
-      description: "Fortaleça sua Fé em Família",
-      image: "https://i.imgur.com/RdXtDBx.png",
+      title: "#6 - BÔNUS HOJE!",
+      subtitle: "Roteiro Pronto: 7 Dias em Família",
+      description: "Cheklist para se organizar junto do Guia",
+      image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/bonus6.webp",
       loading: "lazy",
-      details: "Reflexões práticas e rápidas para inspirar os pais no dia a dia com Deus."
+      details: "Checklist para organizar a semana com o Kit Devocional junto do Guia"
     }
   ];
 
