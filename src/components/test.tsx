@@ -36,5 +36,3 @@ const StepsSection = () => {
 };
 
 export default StepsSection;
-
-nesse codigo aqui, para cada frase quero um icone do react ou uma possivel imagem que represente cada - como se eu tivesse fazendo um passo a passo simples de aplicar o meu produto
