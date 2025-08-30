@@ -78,7 +78,7 @@ const ProductFeatures: React.FC = () => {
     },
     {
       title: "#5 - BÔNUS HOJE!",
-      subtitle: "Guia Prático: Devocional Hoje em 5 Passos,
+      subtitle: "Guia Prático: Devocional Hoje em 5 Passos",
       description: "Guia para o Kit Devocional",
       image: "https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/bonus5.webp",
       loading: "lazy",
