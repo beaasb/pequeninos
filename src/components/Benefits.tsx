@@ -30,7 +30,7 @@ const Benefits = () => {
 
         {/* Imagem logo abaixo do título */}
         <div className="w-full h-64 md:h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-inner mb-10"
-          srt="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp">
+          src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp">
         </div>
 
         {/* Lista de benefícios */}
