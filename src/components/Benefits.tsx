@@ -30,7 +30,11 @@ const Benefits = () => {
 
         {/* Imagem logo abaixo do título */}
         <div className="w-full h-64 md:h-80 bg-gray-100 rounded-2xl flex items-center justify-center shadow-inner mb-10"
-          src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp">
+          <img
+            src="https://raw.githubusercontent.com/beaasb/pequeninos/refs/heads/main/images/Mochupbonus.webp"
+            alt="Mockup bônus"
+            className="w-full max-w-3xl mx-auto h-auto mb-10"
+          />
         </div>
 
         {/* Lista de benefícios */}
