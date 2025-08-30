@@ -18,7 +18,7 @@ const StepsSection = () => {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center gap-4 bg-white p-5 rounded-2xl shadow-md">
               <img src={step.img} alt={`Passo ${index + 1}`} className="w-16 h-16 object-contain" />
-              <p className="text-2xl md:text-3sm text-center font-bold text-gray-800">{step.text}</p>
+              <p className="text-2xl md:text-2sm text-center font-bold text-gray-800">{step.text}</p>
             </div>
           ))}
         </div>
